@@ -1,0 +1,114 @@
+/*верстка под планшет*/
+.tariffs {
+  background: url("../img/main/fon.png");
+  background-position: center;
+  background-color: #FFF0E5;
+  padding: 120px 0;
+}
+@media (max-width: 689px) {
+  .tariffs {
+    padding: 60px 0;
+  }
+}
+.tariffs h2 {
+  margin-bottom: 72px;
+}
+@media (max-width: 689px) {
+  .tariffs h2 {
+    margin-bottom: 48px;
+  }
+}
+.tariffs__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 1166px) {
+  .tariffs__block {
+    justify-content: center;
+  }
+}
+.tariffs__content {
+  width: 558px;
+  border: 1px solid #000000;
+  border-radius: 68px;
+}
+@media (max-width: 430px) {
+  .tariffs__content {
+    border-radius: 39px;
+  }
+}
+.tariffs__content h3 {
+  margin: 48px 0;
+}
+@media (max-width: 689px) {
+  .tariffs__content h3 {
+    margin: 28px 0;
+  }
+}
+.tariffs__content p {
+  margin: 0 0 22px 52px;
+}
+@media (max-width: 689px) {
+  .tariffs__content p {
+    margin: 0 0 22px 26px;
+  }
+}
+.tariffs__content ul {
+  margin-left: 68px;
+  max-width: 392px;
+}
+@media (max-width: 689px) {
+  .tariffs__content ul {
+    margin-left: 34px;
+  }
+}
+.tariffs__content li {
+  margin-bottom: 22px;
+}
+@media (max-width: 1166px) {
+  .tariffs__content:nth-child(odd) {
+    margin-bottom: 78px;
+  }
+}
+@media (max-width: 689px) {
+  .tariffs__content {
+    width: 440px;
+  }
+}
+@media (max-width: 550px) {
+  .tariffs__content {
+    width: 340px;
+  }
+}
+.tariffs_title {
+  display: flex;
+  justify-content: center;
+}
+.tariffs__content_stop {
+  opacity: 30%;
+}
+.tariffs__price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tariffs__price .title_h3 {
+  margin: 12px 0;
+}
+@media (max-width: 689px) {
+  .tariffs__price .title_h3 {
+    margin: 7px 0;
+  }
+}
+.tariffs__price h3 {
+  margin-bottom: 24px;
+}
+.tariffs__price .block_btn {
+  margin: 12px 0 48px 0;
+}
+@media (max-width: 689px) {
+  .tariffs__price .block_btn {
+    margin: 7px 0 28px 0;
+  }
+}

@@ -1,0 +1,81 @@
+@import "../vars.less";
+
+.course {
+    background: url("../img/main/fon.png");
+    background-position: center;
+    background-color: #FFDAC0;
+
+    padding: 120px 0;
+
+    @media @mw5 {
+        padding: 60px 0;
+    }
+
+    .title_h2 {
+        margin: 0 0 92px 0;
+        width: 460px;
+
+        @media @mw5 {
+            margin: 0 0 48px 0;
+            width: 288px;
+
+        }
+
+        @media @mw8 {
+            width: 100%;
+
+        }
+    }
+}
+
+.course__block {
+    min-height: 392px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+    @media @mw1 {
+        justify-content: space-evenly;
+        min-height: 591px;
+    }
+
+
+}
+
+.content_course__block {
+    display: flex;
+
+    @media @mw4 {
+        padding-bottom: 24px;
+
+        &:nth-child(6) {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.course_left {
+    width: 98px;
+    height: 147px;
+
+    @media @mw7 {
+        width: 98px;
+        height: 98px;
+
+
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.course_right {
+    max-width: 263px;
+
+    h3 {
+        margin-bottom: 24px;
+    }
+}

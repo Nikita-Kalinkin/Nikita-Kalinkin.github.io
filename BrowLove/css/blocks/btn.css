@@ -1,0 +1,110 @@
+/*верстка под планшет*/
+.block_btn {
+  margin-top: 40px;
+}
+.btn {
+  width: 412px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 18px;
+  font-family: 'Georgia';
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  cursor: pointer;
+}
+@media (max-width: 689px) {
+  .btn {
+    font-size: 14px;
+    width: 287px;
+    height: 47px;
+  }
+}
+@media (max-width: 430px) {
+  .btn {
+    width: 232px;
+    height: 33px;
+  }
+}
+.btn::before {
+  content: "";
+  width: 412px;
+  height: 68px;
+  border: 1px solid #79675F;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+}
+@media (max-width: 689px) {
+  .btn::before {
+    width: 287px;
+    height: 47px;
+  }
+}
+@media (max-width: 430px) {
+  .btn::before {
+    width: 232px;
+    height: 33px;
+  }
+}
+.btn::after {
+  content: " ";
+  width: 412px;
+  height: 68px;
+  border: 1px solid #79675F;
+  border-radius: 50%;
+  transform: rotate(-4deg);
+  position: absolute;
+  cursor: pointer;
+}
+@media (max-width: 689px) {
+  .btn::after {
+    width: 287px;
+    height: 47px;
+  }
+}
+@media (max-width: 430px) {
+  .btn::after {
+    width: 232px;
+    height: 33px;
+  }
+}
+.btn:hover::after,
+.btn:hover::before {
+  border: 1px solid #fff;
+}
+.btn__scroll {
+  width: 166px;
+  height: 166px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+}
+.btn__scroll:hover {
+  border: 1px solid #fff;
+}
+@media (max-width: 850px) {
+  .btn__scroll {
+    width: 98px;
+    height: 98px;
+    top: 25%;
+  }
+  .btn__scroll img {
+    height: 52px;
+  }
+}
+@media (max-width: 430px) {
+  .btn__scroll {
+    width: 41px;
+    height: 41px;
+    position: fixed;
+    right: 16px;
+  }
+  .btn__scroll img {
+    height: 22px;
+  }
+}

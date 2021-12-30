@@ -1,0 +1,132 @@
+/*верстка под планшет*/
+.form {
+  background: url("../img/main/fon.png");
+  background-color: #D7AD91;
+  padding: 120px 0 0 0;
+  height: 883px;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 1440px) {
+  .form {
+    height: 883px;
+  }
+}
+@media (max-width: 1030px) {
+  .form {
+    height: 1123px;
+  }
+}
+@media (max-width: 689px) {
+  .form {
+    padding: 60px 0;
+    height: 760px;
+  }
+}
+.form h2 {
+  margin-bottom: 72px;
+  width: 558px;
+}
+@media (max-width: 689px) {
+  .form h2 {
+    margin-bottom: 24px;
+    width: 288px;
+  }
+}
+@media (max-width: 360px) {
+  .form h2 {
+    width: 100%;
+  }
+}
+.form .block_btn {
+  margin-top: 37px;
+}
+@media (max-width: 689px) {
+  .form .block_btn {
+    margin-top: 28px;
+  }
+}
+.form__block {
+  max-width: 1146px;
+  height: 762px;
+}
+@media (max-width: 1030px) {
+  .form__block {
+    height: 1063px;
+  }
+}
+@media (max-width: 689px) {
+  .form__block {
+    height: 700px;
+  }
+}
+.form__group {
+  margin-top: 24px;
+}
+@media (max-width: 689px) {
+  .form__group {
+    margin-top: 18px;
+  }
+}
+.form__group:nth-child(1) {
+  margin-top: 0;
+}
+.form__title h4 {
+  margin-bottom: 6px;
+}
+.form__input {
+  width: 656px;
+  height: 62px;
+  border-radius: 18px;
+  border: 1px solid #000000;
+  background: url("../img/main/fon.png");
+  background-position: center;
+  background-color: #D7AD91;
+  padding-left: 16px;
+}
+@media (max-width: 689px) {
+  .form__input {
+    width: 343px;
+    height: 39px;
+  }
+}
+@media (max-width: 430px) {
+  .form__input {
+    width: 100%;
+  }
+}
+.form__right {
+  width: 509px;
+  height: 759px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.form__right img {
+  width: 100%;
+}
+@media (max-width: 689px) {
+  .form__right img {
+    height: 100%;
+  }
+}
+@media (max-width: 1166px) {
+  .form__right {
+    width: 343px;
+    height: 539px;
+    bottom: -26px;
+  }
+}
+@media (max-width: 689px) {
+  .form__right {
+    width: 170px;
+    height: 248px;
+    bottom: 0px;
+  }
+}
+@media (max-width: 430px) {
+  .form__right {
+    width: 140px;
+    height: 218px;
+  }
+}

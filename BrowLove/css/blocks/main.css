@@ -1,0 +1,142 @@
+/*верстка под планшет*/
+.main {
+  background: url("../img/main/fon.png") center;
+  background-color: #D7AD91;
+  height: 784px;
+  padding-top: 16px;
+  margin: 0 auto;
+}
+@media (max-width: 1030px) {
+  .main {
+    height: 1078px;
+  }
+}
+@media (max-width: 967px) {
+  .main {
+    height: 888px;
+  }
+}
+@media (max-width: 689px) {
+  .main {
+    position: relative;
+    height: 693px;
+  }
+}
+.main__block {
+  position: relative;
+  max-width: 1146px;
+  height: 768px;
+}
+@media (max-width: 1030px) {
+  .main__block {
+    height: 1062px;
+  }
+}
+@media (max-width: 967px) {
+  .main__block {
+    height: 872px;
+  }
+}
+@media (max-width: 689px) {
+  .main__block {
+    position: static;
+    height: 683px;
+  }
+}
+.brow {
+  display: flex;
+  padding-top: 165px;
+  margin-left: -140px;
+}
+@media (max-width: 1030px) {
+  .brow {
+    max-width: 1130px;
+    margin: 0 0 0 0;
+    padding-top: 120px;
+    flex-wrap: wrap;
+  }
+}
+.brow__left {
+  width: 400px;
+  height: 603px;
+}
+.brow__left img {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1030px) {
+  .brow__left img {
+    transform: scale(-1, 1);
+  }
+}
+@media (max-width: 1030px) {
+  .brow__left {
+    order: 2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 430px;
+    height: 603px;
+  }
+}
+@media (max-width: 967px) {
+  .brow__left {
+    width: 300px;
+    height: 400px;
+  }
+}
+@media (max-width: 689px) {
+  .brow__left {
+    width: 203px;
+    height: 275px;
+  }
+}
+@media (max-width: 360px) {
+  .brow__left {
+    width: 153px;
+    height: 185px;
+  }
+}
+@media (max-width: 1030px) {
+  .brow__right {
+    order: 1;
+    width: 100%;
+  }
+}
+.title_h2 {
+  margin-bottom: 18px;
+}
+.title_h2 span {
+  color: #79675F;
+}
+@media (max-width: 689px) {
+  .title_h2 {
+    margin-bottom: 14px;
+  }
+}
+.title_h1 {
+  margin-bottom: 27px;
+}
+@media (max-width: 689px) {
+  .title_h1 {
+    margin-bottom: 14px;
+  }
+}
+.title_h3 {
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+}
+.title_h3 hr {
+  display: inline-block;
+  margin-right: 16px;
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+}
+@media (max-width: 689px) {
+  .title_h3 {
+    max-width: 248px;
+    margin-bottom: 21px;
+  }
+}

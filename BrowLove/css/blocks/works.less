@@ -1,0 +1,79 @@
+@import "../vars.less";
+
+.works {
+    background: url("../img/main/fon.png");
+    background-position: center;
+    background-color: #FFDAC0;
+    padding: 120px 0;
+
+    @media @mw5 {
+        padding: 60px 0;
+    }
+
+    h2 {
+        margin-bottom: 72px;
+
+        @media @mw5 {
+            margin-bottom: 48px;
+
+        }
+    }
+}
+
+.works__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+    @media @mw4 {}
+
+}
+
+.works__content {
+    max-width: 362px;
+    max-height: 367px;
+    margin: 0 30px 72px 0;
+
+    &:nth-child(3n) {
+        margin: 0 0 72px 0;
+    }
+
+    @media @mw1 {
+        margin: 0 30px 72px 0;
+    }
+
+    @media @mw2 {
+        &:nth-child(3n) {
+            margin: 0 30px 0 0;
+        }
+
+    }
+
+    @media @mw4 {
+        max-width: 172px;
+        max-height: 172px;
+
+    }
+
+    @media @mw5 {
+        margin: 0 15px 36px 0;
+
+    }
+
+    @media @mw7 {
+        margin: 0 15px 36px 0;
+
+        &:nth-child(3n) {
+            margin: 0 15px 36px 0;
+        }
+
+    }
+
+
+
+    img {
+        width: 100%;
+    }
+}

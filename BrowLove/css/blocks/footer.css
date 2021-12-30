@@ -1,0 +1,84 @@
+/*верстка под планшет*/
+.footer {
+  background: url("../img/main/fon.png");
+  background-position: center;
+  background-color: #FFDAC0;
+  padding: 120px 0;
+}
+@media (max-width: 689px) {
+  .footer {
+    padding: 60px 0;
+  }
+}
+.footer__block {
+  display: flex;
+  position: relative;
+}
+@media (max-width: 689px) {
+  .footer__block {
+    justify-content: space-between;
+  }
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px;
+}
+.footer__content .logo {
+  margin-bottom: 50px;
+}
+@media (max-width: 689px) {
+  .footer__content .logo {
+    margin-bottom: 0;
+  }
+}
+.footer__content--logo {
+  width: 362px;
+}
+@media (max-width: 967px) {
+  .footer__content--logo {
+    width: auto;
+  }
+}
+.footer__content--contact a {
+  padding-top: 20px;
+  color: #000;
+  width: 182px;
+}
+.footer__content--contact h3 {
+  padding-bottom: 14px;
+}
+.footer__content--main button {
+  padding-top: 20px;
+  font-family: 'Georgia';
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  width: 94px;
+}
+.footer__content--main h3 {
+  padding-bottom: 14px;
+}
+@media (max-width: 689px) {
+  .footer__content--main {
+    display: none;
+  }
+}
+.footer__content:nth-child(3n) {
+  padding-right: 0;
+}
+.footer__course {
+  margin-bottom: 18px;
+  color: #79675F;
+}
+@media (max-width: 689px) {
+  .footer__course {
+    display: none;
+  }
+}
+@media (max-width: 689px) {
+  .footer__brow {
+    display: none;
+  }
+}

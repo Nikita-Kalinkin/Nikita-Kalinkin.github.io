@@ -1,0 +1,132 @@
+// compress: true
+@import "vars.less";
+/*Обнуление*/
+@import "zeroing.less";
+
+/* 
+
+404 сделать надо
+не сделано уведомление при отправки сообщении
+ 
+отправка в телеграмм  работает,
+php файл при отправки формы показывает страницу 
+
+*/
+
+body {
+
+
+
+    margin: 0 auto;
+    font-family: 'Georgia';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+
+    &.no-scroll {
+    	overflow: hidden;
+    }
+
+    @media @mw5 {
+
+        font-size: 14px;
+    }
+
+
+
+}
+
+/*Заголовки постоянные*/
+
+h1 {
+    font-size: 64px;
+    font-family: 'Conv_Zetafonts - Lovelace Text Regular';
+    line-height: 65px;
+
+    font-weight: normal;
+    font-style: normal;
+
+    @media @mw5 {
+        line-height: 36px;
+        font-size: 36px;
+    }
+
+}
+
+h2 {
+    font-size: 48px;
+    font-family: 'Conv_Zetafonts - Lovelace Text Regular';
+    line-height: 48px;
+    font-weight: normal;
+    font-style: normal;
+
+    @media @mw5 {
+
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+
+
+
+
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Georgia';
+
+    font-weight: normal;
+    font-style: normal;
+
+    @media @mw5 {
+
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+/*Отступы постоянные*/
+
+h4 {
+    font-size: 14px;
+    font-family: 'Conv_Zetafonts - Lovelace Text Regular';
+    line-height: 14px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 1226px;
+    padding: 0 40px;
+
+
+
+    margin: 0 auto;
+
+    @media @mw5 {
+
+        padding: 0 16px;
+
+    }
+
+
+}
+
+
+
+/* Block */
+@import "blocks/btn";
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/course";
+@import "blocks/rezult";
+@import "blocks/tariffs";
+@import "blocks/works";
+@import "blocks/form";
+@import "blocks/modal";
+
+
+@import "blocks/footer";

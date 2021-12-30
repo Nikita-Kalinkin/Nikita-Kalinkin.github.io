@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!------CSS------->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sweetalert.min.css">
+    <!------Fonts------->
+    <link rel="stylesheet" href="fonts/georgia/fonts.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="fonts/Lovelace/fonts.css" type="text/css" charset="utf-8">
+    <!------Jquery------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Sprite -->
+    <svg style="display: none;">
+        <symbol id="burger__icon" viewBox="0 0 43 30">
+            <g>
+                <path d="M0 1H43" stroke-width="2" />
+                <path d="M0 10.1168H43" stroke-width="2" />
+                <path d="M0 19.2336H43" stroke-width="2" />
+                <path d="M0 28.3504H43" stroke-width="2" />
+            </g>
+        </symbol>
+        <symbol id="contact__icon" viewBox="0 0 43 50">
+            <g>
+                <path
+                    d="M32.25 0.749298H40.6111C41.925 0.749298 43 1.97437 43 3.47168C43 29.0348 24.8206 49.7522 2.38889 49.7522C1.075 49.7522 0 48.5271 0 47.0298V37.5287C0 36.0314 1.075 34.8063 2.38889 34.8063C5.35111 34.8063 8.24166 34.2618 10.9172 33.2545C11.1561 33.1456 11.4189 33.1184 11.6578 33.1184C12.2789 33.1184 12.8761 33.3906 13.3539 33.9079L18.6094 39.8971C25.37 35.9497 30.9122 29.661 34.3522 21.9566L29.0967 15.9674C28.4278 15.2051 28.2367 14.1434 28.4994 13.1906C29.3833 10.1415 29.8611 6.87465 29.8611 3.47168C29.8611 1.97437 30.9361 0.749298 32.25 0.749298Z" />
+            </g>
+        </symbol>
+        <symbol id="ig__icon" viewBox="0 0 43 46">
+            <g>
+                <path
+                    d="M22.1741 0.0558806C14.5073 0.804312 7.7881 4.72129 3.70637 10.8218C-2.08087 19.4714 -1.00076 30.8953 6.31594 38.4207C10.3652 42.5855 15.4293 45.0753 21.5022 45.8874C22.636 46.039 26.4038 46.0371 27.5875 45.8844C33.1339 45.1684 38.1012 42.8591 41.879 39.2401C43.1189 38.0524 43.383 37.7684 44.2054 36.7387C46.6561 33.6702 48.2606 29.9295 48.8798 25.8412C49.0401 24.782 49.0401 21.2285 48.8797 20.1699C48.4666 17.4445 47.7157 15.1224 46.5109 12.845C45.2344 10.4321 43.9244 8.7119 41.8854 6.77096C38.1031 3.17041 33.3673 0.933761 27.9229 0.176508C26.7473 0.0129408 23.3449 -0.0583555 22.1741 0.0558806ZM30.3022 9.86272C33.0567 10.0302 34.6675 10.597 36.1407 11.917C37.6374 13.2582 38.328 14.9057 38.512 17.5748C38.6333 19.3335 38.6331 26.6311 38.5118 28.4178C38.3289 31.1123 37.6236 32.7785 36.089 34.1419C34.6605 35.4111 33.0089 35.9837 30.3022 36.1484C28.4634 36.2603 20.5784 36.2603 18.7396 36.1484C15.985 35.9808 14.3743 35.4141 12.9011 34.0941C11.4043 32.7529 10.7137 31.1054 10.5297 28.4363C10.4094 26.6907 10.41 19.1841 10.5308 17.5234C10.7223 14.8873 11.4153 13.2483 12.9011 11.917C14.3145 10.6506 16.0136 10.0261 18.4714 9.86956C20.0914 9.7664 28.6378 9.76145 30.3022 9.86272ZM21.023 12.2132C18.1442 12.2619 17.6795 12.2899 17.0322 12.4546C14.9937 12.9732 13.8365 14.0608 13.2906 15.971C13.117 16.5787 13.087 17.0296 13.0336 19.8323C13.0004 21.5776 13.0004 24.4335 13.0336 26.1788C13.087 28.9815 13.117 29.4324 13.2906 30.0401C13.8367 31.951 14.998 33.0419 17.0322 33.5549C17.6792 33.718 18.1592 33.7462 21.1428 33.7963C23.0008 33.8275 26.041 33.8275 27.8989 33.7963C30.907 33.7458 31.359 33.7189 32.0258 33.5509C34.0104 33.051 35.2123 31.9224 35.7479 30.0554C35.9283 29.4269 35.9561 29.0141 36.0092 26.1788C36.0418 24.4335 36.0418 21.5775 36.0092 19.8323C35.9566 17.0197 35.9273 16.5809 35.7522 15.971C35.2022 14.0566 34.0367 12.9628 32.0095 12.4587C31.2623 12.273 31.0644 12.2643 25.6708 12.1798C24.9066 12.1679 22.8151 12.1828 21.023 12.2132ZM32.6363 14.4593C33.0034 14.5896 33.4291 14.978 33.5887 15.3284C34.0517 16.345 33.2252 17.5143 32.0436 17.5143C31.1406 17.5143 30.3666 16.7912 30.3666 15.9477C30.3666 14.8576 31.5577 14.0765 32.6363 14.4593ZM26.8458 16.5867C28.0047 16.9686 28.6482 17.3489 29.5577 18.1894C30.4395 19.0042 30.9906 19.8165 31.3902 20.8901C31.6392 21.5591 31.6583 21.7093 31.6583 23.0055C31.6583 24.3017 31.6392 24.452 31.3902 25.121C31.0039 26.1588 30.4381 27.0042 29.6079 27.7841C28.7776 28.564 27.8776 29.0955 26.7729 29.4584C26.0607 29.6923 25.9007 29.7102 24.5209 29.7102C23.141 29.7102 22.9811 29.6923 22.2688 29.4584C21.126 29.083 20.2613 28.5653 19.3939 27.737C18.5035 26.8869 18.0992 26.2853 17.6819 25.1895C17.3934 24.4323 17.3815 24.3452 17.3846 23.0055C17.3875 21.7336 17.4106 21.5465 17.6458 20.8901C18.1452 19.4952 19.2111 18.1817 20.4927 17.3812C21.8974 16.5041 22.9005 16.2427 24.7125 16.2821C25.8668 16.3071 26.0968 16.34 26.8458 16.5867ZM23.3906 18.7347C20.8711 19.3717 19.3367 21.7463 19.9697 24.029C20.4279 25.6818 21.6744 26.8509 23.4383 27.2825C26.7319 28.0884 29.9318 25.0825 29.0739 21.9886C28.4061 19.5804 25.8451 18.1141 23.3906 18.7347Z" />
+            </g>
+        </symbol>
+    </svg>
+    <div class="main" id="main">
+        <!-- Main -->
+        <div class="container">
+            <div class="main__block">
+                <!-- Main__block -->
+                <div class="main_header" id="header">
+                    <div class="logo">
+                        <img src="img/main/logo.png" alt="">
+                    </div>
+                    <header class="header">
+                        <!-- Header -->
+                        <div class="header__block header__block--burger">
+                            <button class="header__burger" type="button" id="navToggle">
+                                <svg class="burger__icon">
+                                    <use xlink:href="#burger__icon"></use>
+                                </svg>
+                            </button>
+                            <nav class="nav__burger" id="nav">
+                                <button class="nav__link" href="#course" data-scroll="#course">Для кого</button>
+                                <button class="nav__link" href="#" data-scroll="#rezult">Результат</button>
+                                <button class="nav__link" href="#" data-scroll="#tariffs">Тарифы</button>
+                                <button class="nav__link" href="#" data-scroll="#works">Фото работ</button>
+                            </nav>
+                            <button class="header__contact" type="button" id="navtel">
+                                <svg class="contact__icon">
+                                    <use xlink:href="#contact__icon"></use>
+                                </svg>
+                            </button>
+                            <div class="nav__contact" id="navcontact">
+                                <a href="tel:+7 999 999 99 99">+7 999 999 99 99</a>
+                                <a href="https://www.instagram.com/kalinkinms">Мы в Instagram</a>
+                                <a href="https://web.whatsapp.com/">Написать в WhatsApp</a>
+                            </div>
+                        </div>
+                        <a class=" header__block header__block--ig " href="https://www.instagram.com/kalinkinms"
+                            target="_blank">
+                            <svg class="ig__icon">
+                                <use xlink:href="#ig__icon"></use>
+                            </svg>
+                        </a>
+                    </header><!-- /Header -->
+                </div>
+                <div class="brow">
+                    <!-- Brow  -->
+                    <div class="brow__left">
+                        <img src="img/main/1.png">
+                    </div>
+                    <div class="brow__right">
+                        <!-- brow__right -->
+                        <h2 class="title_h2"><span>Онлайн-курс</span>
+                        </h2>
+                        <h1 class="title_h1">Brow-master‎ <br>
+                            за один месяц</h1>
+                        <h3 class="title_h3">
+                            <hr>
+                            </hr>Начни зарабатывать от 30 000 руб/мес с нуля
+                        </h3>
+                        <h3>Старт курса - 1 октября</h3>
+                        <div class="block_btn">
+                            <button data-scroll="#form" type="button" class="btn ">
+                                Записаться
+                            </button>
+                        </div>
+                    </div><!-- /brow__right -->
+                </div><!-- /Brow  -->
+            </div><!-- /Main__block -->
+        </div><!-- /container -->
+    </div> <!-- /Main -->
+    <div class="course" id="course">
+        <!-- course -->
+        <div class="container">
+            <!-- /container -->
+            <h2 class="title_h2">Кому подойдет <span>наш курс</span></h2>
+            <div class="course__block">
+                <!-- course__block -->
+                <div class="content_course__block">
+                    <div class="course_left">
+                        <img src="img/course/1.png" alt="">
+                    </div>
+                    <div class="course_right">
+                        <h3 class="title_h3">Еще новичок</h3>
+                        <p>Хотите начать свое дело
+                            в сфере бьюти и заработать первые деньги
+                            с нуля в этой профессии.</p>
+                    </div>
+                </div>
+                <div class="content_course__block">
+                    <div class="course_left">
+                        <img src="img/course/2.png" alt="">
+                    </div>
+                    <div class="course_right">
+                        <h3 class="title_h3">Работаете в офисе</h3>
+                        <p>Устали ходить в офис
+                            и зависеть от зарплаты, начальника и хотите освоить прибыльную профессию со свободным
+                            графиком.</p>
+                    </div>
+                </div>
+                <div class="content_course__block">
+                    <div class="course_left">
+                        <img src="img/course/3.png" alt="">
+                    </div>
+                    <div class="course_right">
+                        <h3 class="title_h3">Мама в декрете</h3>
+                        <p>Хотите больше времени проводить с семьей
+                            и занимать интересным
+                            и прибыльным делом</p>
+                    </div>
+                </div>
+                <div class="content_course__block">
+                    <div class="course_left">
+                        <img src="img/course/4.png" alt="">
+                    </div>
+                    <div class="course_right">
+                        <h3 class="title_h3">Работаете в бьюти</h3>
+                        <p>Вы уже предоставляете услуги ресниц, маникюр, макияж,
+                            но хотите увеличить список услуг.</p>
+                    </div>
+                </div>
+                <div class="content_course__block">
+                    <div class="course_left">
+                        <img src="img/course/5.png" alt="">
+                    </div>
+                    <div class="course_right">
+                        <h3 class="title_h3">Бровист</h3>
+                        <p>Хотите повысить уровень своих работ и выйти на новый уровень
+                            в доходах и клиентах.</p>
+                    </div>
+                </div>
+                <div class="content_course__block">
+                    <div class="course_left">
+                        <img src="img/course/6.png" alt="">
+                    </div>
+                    <div class="course_right">
+                        <h3 class="title_h3">Ещё учитесь</h3>
+                        <p>Хотите стать независимой
+                            и не зависеть от родителей
+                            и начать зарабатывать дополнительные деньги
+                            в бьюти сфере.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /container -->
+    </div><!-- /course -->
+    <div class="rezult" id="rezult">
+        <!-- rezult -->
+        <div class="container">
+            <!-- container -->
+            <h2 class="title_h2">Результаты <span>
+                    после обучения</span></h2>
+            <div class="rezult__block">
+                <!-- rezult__block -->
+                <div class="content_rezult__block">
+                    <div class="rezult_left">
+                        <img src="img/rezult/1.png" alt="">
+                    </div>
+                    <div class="rezult_right">
+                        <p>Научишься работать
+                            с разными бровями
+                            и делать крутой результат</p>
+                    </div>
+                </div>
+                <div class="content_rezult__block">
+                    <div class="rezult_left">
+                        <img src="img/rezult/2.png" alt="">
+                    </div>
+                    <div class="rezult_right">
+                        <p>Систематизируешь свои знания и разберешься
+                            в нюансах профессии</p>
+                    </div>
+                </div>
+                <div class="content_rezult__block">
+                    <div class="rezult_left">
+                        <img src="img/rezult/3.png" alt="">
+                    </div>
+                    <div class="course_right">
+                        <p>Раберешься с какими материалами работать
+                            и какие техники использовать</p>
+                    </div>
+                </div>
+                <div class="content_rezult__block">
+                    <div class="rezult_left">
+                        <img src="img/rezult/4.png" alt="">
+                    </div>
+                    <div class="rezult_right">
+                        <p>Заработаешь свои первые деньги на бровях</p>
+                    </div>
+                </div>
+                <div class="content_rezult__block">
+                    <div class="rezult_left">
+                        <img src="img/rezult/5.png" alt="">
+                    </div>
+                    <div class="rezult_right">
+                        <p>Узнаешь, как системно начать зарабатывать
+                            от 30 000 руб/мес</p>
+                    </div>
+                </div>
+                <div class="content_rezult__block">
+                    <div class="rezult_left">
+                        <img src="img/rezult/6.png" alt="">
+                    </div>
+                    <div class="rezult_right">
+                        <p>Преодолеешь страх перед клиентом и будешь уверена
+                            в себе</p>
+                    </div>
+                </div>
+            </div><!-- /rezult__block -->
+        </div><!-- /container -->
+    </div><!-- /rezult -->
+    <div class="tariffs" id="tariffs">
+        <!-- tariffs -->
+        <div class="container">
+            <!-- container -->
+            <h2 class="title_h2">Тарифы</h2>
+            <div class="tariffs__block">
+                <!-- tariffs__block -->
+                <div class="tariffs__content">
+                    <div class="tariffs_title">
+                        <h3 class="title_h3"> Самостоятельный </h3>
+                    </div>
+                    <P>Что входит в тариф:</P>
+                    <ul>
+                        <li>Подготовка рабочего места </li>
+                        <li>Стерилизация рабочих инструментов</li>
+                        <li>Очищение кожи и бровей</li>
+                        <li>Гармоничный подбор формы</li>
+                        <li>Рекомендация по уходу за бровями</li>
+                        <li>Окрашивание и подбор красителя</li>
+                        <li>Ламинирование бровей</li>
+                        <li>SPA-оформление бровей</li>
+                        <li>Работа с воском и нитью</li>
+                        <li>Методы нанесения красителя</li>
+                        <li>Осветление бровей</li>
+                        <li>Прореживание бровей</li>
+                        <li>Изучение кожи клиента</li>
+                        <li>Работа с подростком и возрастным клиентом</li>
+                        <li class="tariffs__content_stop">Онлайн-сопровождение + скидка
+                            на покупку материалов
+                            в профессиональном магазине</li>
+                        <li class="tariffs__content_stop">Онлайн-консультация после обучения</li>
+                        <li class="tariffs__content_stop">Книга бровиста FIELD</li>
+                        <li class="tariffs__content_stop">Как сделать 60000+ в месяц
+                            на дополнительных услугах</li>
+                        <li class="tariffs__content_stop">Упаковка рабочей страницы
+                            в Инстаграм</li>
+                        <li class="tariffs__content_stop">Онлайн-сопровождение до первого клиента</li>
+                        <li class="tariffs__content_stop">Групповой чат с кураторами курса</li>
+                        <li class="tariffs__content_stop">Гайд по поиску клиентов</li>
+                    </ul>
+                    <div class="tariffs__price">
+                        <h3 class="title_h3"> Стоимость</h3>
+                        <h3 class="title_h3"> 9 900 рублей</h3>
+                        <div class="block_btn">
+                            <button type="button" data-scroll="#form" class="btn ">
+                                Записаться
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tariffs__content">
+                    <div class="tariffs_title">
+                        <h3 class="title_h3"> С наставником </h3>
+                    </div>
+                    <P>Что входит в тариф:</P>
+                    <ul>
+                        <li>Подготовка рабочего места </li>
+                        <li>Стерилизация рабочих инструментов</li>
+                        <li>Очищение кожи и бровей</li>
+                        <li>Гармоничный подбор формы</li>
+                        <li>Рекомендация по уходу за бровями</li>
+                        <li>Окрашивание и подбор красителя</li>
+                        <li>Ламинирование бровей</li>
+                        <li>SPA-оформление бровей</li>
+                        <li>Работа с воском и нитью</li>
+                        <li>Методы нанесения красителя</li>
+                        <li>Осветление бровей</li>
+                        <li>Прореживание бровей</li>
+                        <li>Изучение кожи клиента</li>
+                        <li>Работа с подростком и возрастным клиентом</li>
+                        <li>Онлайн-сопровождение + скидка
+                            на покупку материалов
+                            в профессиональном магазине</li>
+                        <li>Онлайн-консультация после обучения</li>
+                        <li>Книга бровиста FIELD</li>
+                        <li>Как сделать 60000+ в месяц
+                            на дополнительных услугах</li>
+                        <li>Упаковка рабочей страницы
+                            в Инстаграм</li>
+                        <li>Онлайн-сопровождение до первого клиента</li>
+                        <li>Групповой чат с кураторами курса</li>
+                        <li>Гайд по поиску клиентов</li>
+                    </ul>
+                    <div class="tariffs__price">
+                        <h3 class="title_h3"> Стоимость</h3>
+                        <h3 class="title_h3"> 15 900 рублей</h3>
+                        <div class="block_btn">
+                            <button type="button" data-scroll="#form" class="btn ">
+                                Записаться
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /tariffs__block -->
+        </div> <!-- /container -->
+    </div> <!-- /tariffs -->
+    <div class="works" id="works">
+        <!-- works -->
+        <div class="container">
+            <h2 class="title_h2">Работы <br><span>
+                    наших учеников</span></h2>
+            <div class="works__block">
+                <!-- works__block -->
+                <div class="works__content">
+                    <img src="img/works/1.png" alt="">
+                </div>
+                <div class="works__content">
+                    <img src="img/works/2.png" alt="">
+                </div>
+                <div class="works__content">
+                    <img src="img/works/3.png" alt="">
+                </div>
+                <div class="works__content">
+                    <img src="img/works/4.png" alt="">
+                </div>
+                <div class="works__content">
+                    <img src="img/works/5.png" alt="">
+                </div>
+                <div class="works__content">
+                    <img src="img/works/6.png" alt="">
+                </div>
+            </div><!-- /works__block -->
+        </div><!-- /container -->
+    </div><!-- /works -->
+    <div class="form" id="form">
+        <!-- form -->
+        <div class="container">
+            <!-- container -->
+            <div class="form__block">
+                <!-- form__block -->
+                <div class="form__left">
+                    <!-- form__left -->
+                    <h2 class="title_h2"><span>
+                            Запишитесь на курс сегодня и </span>получите скидку 10%</h2>
+                    <form enctype="multipart/form-data" method="post">
+                        <!-- form -->
+                        <div class="form__group">
+                            <label class="form__title" for="name">
+                                <h4>Ваше имя*</h4>
+                            </label>
+                            <input class="form__input" type="name" name="name" id="name" required>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__title" for="phone">
+                                <h4>Номер телефона*</h4>
+                            </label>
+                            <input class="form__input" type="phont" name="phone" id="phone" required>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__title" for="email">
+                                <h4>Ваш Е-mail*</h4>
+                            </label>
+                            <input class="form__input" type="email" name="email" id="email" required>
+                        </div>
+                        <div class="block_btn">
+                            <button type="submit" class="btn " data-modal="#modal_form">
+                                Записаться
+                            </button>
+                        </div>
+                        <input type="hidden" name="act" value="order">
+                    </form><!-- /form -->
+                </div><!-- /form__left -->
+                <div class="form__right">
+                    <!-- form__right -->
+                    <img src="img/form/1.png" alt="">
+                </div><!-- /form__right -->
+            </div><!-- /form__block -->
+        </div><!-- /container -->
+    </div><!-- /form -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <div class="footer__content footer__content--logo">
+                    <div class="logo">
+                        <img src="img/main/logo.png" alt="">
+                    </div>
+                    <h3 class="footer__course"><span>Онлайн-курс</span></h3>
+                    <h3 class="footer__brow">Brow-master‎ <br>
+                        за один месяц</h3>
+                </div>
+                <div class="footer__content footer__content--contact">
+                    <h3>Контакты</h3>
+                    <a href="tel:+7 999 999 99 99">+7 999 999 99 99</a>
+                    <a href="#">Мы в Instagram</a>
+                    <a href="#">Написать в WhatsApp</a>
+                </div>
+                <div class="footer__content footer__content--main">
+                    <h3>Меню</h3>
+                    <button>Для кого</button>
+                    <button>Результат</button>
+                    <button>Тарифы</button>
+                    <button>Фото работ</button>
+                </div>
+                <div>
+                    <button class="btn__scroll" data-scroll="#main" id="btnS">
+                        <img src="img/main/Arrow.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal" id="modal_project_1">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+            </button>
+            <div class="modal__content">
+                <h2 class="title_h2">Мы получили вашу заявку</h2>
+                <h3 class="title_h3"><span>В течении 10 минут мы вам перезвоним</span>
+                    <span>и обсудим все детали!</span>
+                </h3>
+            </div><!-- /.modal-work__content -->
+        </div>
+        <!--/.modal-work -->
+    </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+@import "../vars.less";
+
+.form {
+    background: url("../img/main/fon.png");
+
+    background-color: #D7AD91;
+
+
+    padding: 120px 0 0 0;
+    height: 883px;
+    margin: 0 auto;
+    position: relative;
+
+
+    @media @mwform {
+        height: 883px;
+
+    }
+
+    @media @mw2 {
+        height: 1123px;
+    }
+
+    @media @mw5 {
+        padding: 60px 0;
+        height: 760px;
+    }
+
+    h2 {
+        margin-bottom: 72px;
+        width: 558px;
+
+        @media @mw5 {
+            margin-bottom: 24px;
+            width: 288px;
+
+        }
+
+        @media @mw8 {
+            width: 100%;
+
+        }
+    }
+
+    .block_btn {
+        margin-top: 37px;
+
+        @media @mw5 {
+            margin-top: 28px;
+        }
+
+
+    }
+}
+
+.form__block {
+
+    max-width: 1146px;
+    height: 762px;
+
+    @media @mw2 {
+        height: 1063px;
+    }
+
+    @media @mw5 {
+        height: 700px;
+    }
+}
+
+.form__left {}
+
+
+
+.form__group {
+    margin-top: 24px;
+
+    @media @mw5 {
+        margin-top: 18px;
+    }
+
+
+    &:nth-child(1) {
+        margin-top: 0;
+    }
+}
+
+.form__title {
+    h4 {
+        margin-bottom: 6px;
+    }
+
+}
+
+.form__input {
+    width: 656px;
+    height: 62px;
+    border-radius: 18px;
+    border: 1px solid #000000;
+    background: url("../img/main/fon.png");
+    background-position: center;
+    background-color: #D7AD91;
+
+    padding-left: 16px;
+
+    @media @mw5 {
+        width: 343px;
+        height: 39px;
+    }
+
+    @media @mw7 {
+        width: 100%;
+
+    }
+
+}
+
+.form__right {
+
+    width: 509px;
+    height: 759px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    img {
+        width: 100%;
+
+        @media @mw5 {
+
+            height: 100%;
+        }
+
+    }
+
+    @media @mw1 {
+
+        width: 343px;
+        height: 539px;
+        bottom: -26px;
+    }
+
+    @media @mw2 {}
+
+    @media @mw5 {
+        width: 170px;
+        height: 248px;
+        bottom: 0px;
+
+
+    }
+
+    @media @mw7 {
+        width: 140px;
+        height: 218px;
+    }
+
+}

@@ -1,0 +1,65 @@
+/*верстка под планшет*/
+.works {
+  background: url("../img/main/fon.png");
+  background-position: center;
+  background-color: #FFDAC0;
+  padding: 120px 0;
+}
+@media (max-width: 689px) {
+  .works {
+    padding: 60px 0;
+  }
+}
+.works h2 {
+  margin-bottom: 72px;
+}
+@media (max-width: 689px) {
+  .works h2 {
+    margin-bottom: 48px;
+  }
+}
+.works__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.works__content {
+  max-width: 362px;
+  max-height: 367px;
+  margin: 0 30px 72px 0;
+}
+.works__content:nth-child(3n) {
+  margin: 0 0 72px 0;
+}
+@media (max-width: 1166px) {
+  .works__content {
+    margin: 0 30px 72px 0;
+  }
+}
+@media (max-width: 1030px) {
+  .works__content:nth-child(3n) {
+    margin: 0 30px 0 0;
+  }
+}
+@media (max-width: 850px) {
+  .works__content {
+    max-width: 172px;
+    max-height: 172px;
+  }
+}
+@media (max-width: 689px) {
+  .works__content {
+    margin: 0 15px 36px 0;
+  }
+}
+@media (max-width: 430px) {
+  .works__content {
+    margin: 0 15px 36px 0;
+  }
+  .works__content:nth-child(3n) {
+    margin: 0 15px 36px 0;
+  }
+}
+.works__content img {
+  width: 100%;
+}
