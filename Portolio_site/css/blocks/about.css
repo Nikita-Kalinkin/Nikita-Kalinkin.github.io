@@ -1,0 +1,85 @@
+/*верстка под планшет*/
+.about .title_h2 {
+  margin-bottom: 53px;
+}
+@media (max-width: 320px) {
+  .about .title_h2 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .about .about_h4--one {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .about .about_h4--two {
+    width: 115px;
+  }
+}
+.about-block {
+  display: flex;
+  align-items: center;
+}
+.about__block-img {
+  max-width: 460px;
+  max-height: 567px;
+}
+@media (max-width: 1030px) {
+  .about__block-img {
+    max-width: 420px;
+    max-height: 500px;
+  }
+}
+@media (max-width: 770px) {
+  .about__block-img {
+    display: none;
+  }
+}
+.about__block-img img {
+  width: 100%;
+  height: auto;
+}
+.about__block-text {
+  max-width: 490px;
+  margin-left: 110px;
+}
+@media (max-width: 1030px) {
+  .about__block-text {
+    max-width: 400px;
+    margin-left: 80px;
+  }
+}
+@media (max-width: 850px) {
+  .about__block-text {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 770px) {
+  .about__block-text {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 430px) {
+  .about__block-text {
+    max-width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  .about__block-text {
+    width: 171px;
+  }
+}
+.about__block-text h4 {
+  margin-bottom: 30px;
+}
+@media (max-width: 320px) {
+  .about__block-text h4 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 770px) {
+  .about__block-text {
+    margin-left: 0px;
+  }
+}

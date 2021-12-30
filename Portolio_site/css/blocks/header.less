@@ -1,0 +1,62 @@
+// compress: true
+@import "../vars.less";
+
+.header {
+  @media @mw4 {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+
+  @media @mw4 {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+
+    position: absolute;
+    z-index: 100;
+
+    top: 60px;
+    background-color: #212121;
+  }
+}
+
+.menu-link {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #ffffff;
+  margin-left: 52px;
+  @media @mw4 {
+    margin-top: 10px;
+  }
+}
+
+.header__burger {
+  display: none;
+  margin-left: 20px;
+  height: 30px;
+  @media @mw4 {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.burger__icon {
+  display: block;
+  width: 32px;
+  height: 30px;
+  stroke: #ffffff;
+
+  @media @mw7 {
+    width: 34px;
+    height: 24px;
+  }
+}
+
+.menu.burger_show {
+  display: flex;
+}

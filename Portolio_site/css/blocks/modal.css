@@ -1,0 +1,44 @@
+/*верстка под планшет*/
+.modal {
+  display: none;
+  width: 90%;
+  height: 90%;
+  overflow: auto;
+  background-color: #212121;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  z-index: 1000;
+}
+.modal.show {
+  display: flex;
+}
+.modal__dialog {
+  width: 100%;
+  position: relative;
+  transform: scale(0);
+  transition: transform 0.2s linear;
+}
+.modal__close {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+.modal__close button:before {
+  width: 1px;
+  height: 42px;
+  background-color: #ffffff;
+}
+.modal__close:hover {
+  transform: translateY(-3px);
+}
+.modal__content {
+  display: flex;
+  justify-content: center;
+}

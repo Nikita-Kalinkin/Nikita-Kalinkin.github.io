@@ -1,0 +1,23 @@
+// compress: true
+@import "../vars.less";
+
+.footer {
+  padding: 120px 0 56px 0;
+
+  @media @mw5 {
+    padding: 60px 0;
+  }
+}
+
+.footer-block {
+  display: flex;
+  justify-content: space-between;
+
+   @media @mw7 {
+   flex-direction: column;
+  }
+
+  .footer-text {
+    color: #7d7d7d;
+  }
+}
