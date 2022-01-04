@@ -15,11 +15,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="author" content="Афанасьева Анастасия">
-    <!------CSS------->
+    <!--CSS-->
     <link rel="stylesheet" href="css/sweetalert.min.css">
-    <link rel="stylesheet" href="fonts/Calypso/fonts.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="fonts/Calypso/fonts.css" type="text/css">
     <link rel="stylesheet" href="css/style.css">
-    <!------Fonts------->
+    <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 
@@ -61,10 +61,10 @@
         <!-- .container -->
         <header class="header">
             <nav class="menu" id="nav">
-                <button class="menu-link" href="#" data-scroll="#portfolio">Портфолио</button>
-                <button class="menu-link" href="#" data-scroll="#price">Cтоимость</button>
-                <button class="menu-link" href="#" data-scroll="#stages"> Этапы работы </button>
-                <button class="menu-link" href="#" data-scroll="#contacts">Контакты</button>
+                <button class="menu-link" data-scroll="#portfolio">Портфолио</button>
+                <button class="menu-link" data-scroll="#price">Cтоимость</button>
+                <button class="menu-link" data-scroll="#stages"> Этапы работы </button>
+                <button class="menu-link" data-scroll="#contacts">Контакты</button>
             </nav>
             <button class="header__burger" type="button" id="navToggle">
                 <svg class="burger__icon">
@@ -72,7 +72,7 @@
                 </svg>
             </button>
         </header>
-        <div class="main" id="main">
+        <main class="main" id="main">
             <!-- .Main -->
             <h4 class="title_h4">Веб-дизайнер</h4>
             <h1 class="title_h1 ">Настасья </h1>
@@ -93,9 +93,9 @@
             </div>
             <img class="star-big" src="img/main/Star-big.png" alt="" id="biggear">
             <img class="star-small" src="img/main/Star-small.png" alt="" id="smallgear">
-        </div> <!-- /.Main -->
+        </main> <!-- /.Main -->
 
-        <div class="about">
+        <section class="about">
             <!-- .about -->
             <h2 class="title_h2">обо мне</h2>
             <div class="about-block">
@@ -118,9 +118,9 @@
                     <h4 class="title_h4">-Выделю вас среди конкурентов</h4>
                 </div><!-- /about__block-text -->
             </div><!-- /about-block -->
-        </div><!-- /.about -->
+        </section><!-- /.about -->
 
-        <div class="portfolio" id="portfolio">
+        <section class="portfolio" id="portfolio">
             <!-- .portfolio -->
             <h2 class="title_h2">портфолио</h2>
             <div class="portfolio-list">
@@ -212,8 +212,8 @@
                     </div>
                 </div>
             </div><!-- /.portfolio-list -->
-        </div><!-- /.portfolio -->
-        <div class="stages" id="stages">
+        </section><!-- /.portfolio -->
+        <section class="stages" id="stages">
             <!-- stages -->
 
             <div class="stages-title">
@@ -316,9 +316,9 @@
                 </div><!-- /stages-block -->
             </div><!-- /.stages-right -->
 
-        </div><!-- ./stages -->
+        </section><!-- ./stages -->
 
-        <div class="price" id="price">
+        <section class="price" id="price">
             <!-- price -->
             <h2 class="title_h2">Стоимость</h2>
             <div class="price-block">
@@ -426,8 +426,8 @@
                     <h3 class="title_h3">от 15 000 рублей</h3>
                 </div><!-- /.price__right-text -->
             </div><!-- /.price-block -->
-        </div><!-- ./price -->
-        <div class="form">
+        </section><!-- ./price -->
+        <section class="form">
             <!-- .form -->
             <div class="form-title">
                 <!-- .form-title -->
@@ -444,29 +444,21 @@
                     <form id="form" enctype="multipart/form-data" method="post">
                         <!-- .form -->
                         <div class="form__group">
-                            <label class="form__title" for="name">
-                                <h4>Ваше имя</h4>
-                            </label>
-                            <input class="form__input" type="name" name="name" id="name" required>
+                            <h4 class="form-title">Ваше имя</h4>
+                            <input class="form__input" type="text" name="UserName" id="UserName" required>
                         </div>
                         <div class="form__group">
-                            <label class="form__title" for="phone">
-                                <h4>Ваш телефон</h4>
-                            </label>
-                            <input class="form__input" type="phont" name="phone" id="phone"
-                                placeholder="+7 (999) 999 99 99" required>
+                            <h4 class="form-title">Ваш телефон</h4>
+                            <input class="form__input" type="tel" name="tel" id="tel"
+                                placeholder="+7(999)9991199" required>
                         </div>
                         <div class="form__group">
-                            <label class="form__title" for="email">
-                                <h4>Ваш e-mail</h4>
-                            </label>
+                            <h4 class="form-title">Ваш e-mail</h4>
                             <input class="form__input" type="email" name="email" id="email" required>
                         </div>
                         <div class="form__group">
-                            <label class="form__title" for="select">
-                                <h4>Какой сайт вам нужен?</h4>
-                            </label>
-                            <select class="select" size="1" name="select">
+                                <h4 class="form-title">Какой сайт вам нужен?</h4>
+                                <select class="select" size="1" name="select">
                                 <option disabled>Выберите сайт</option>
                                 <option value="одностраничный сайт">Одностраничный сайт </option>
                                 <option value="многостраничный сайт">Многостраничный сайт</option>
@@ -498,7 +490,7 @@
                     </div>
                 </div><!-- /contacts -->
             </div><!-- /form__block -->
-        </div><!-- /form -->
+        </section><!-- /form -->
         <footer class="footer">
             <div class="footer-block">
                 <!-- footer-block -->
