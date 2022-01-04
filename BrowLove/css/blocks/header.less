@@ -1,301 +1,237 @@
 @import "../vars.less";
 
-
-
 .logo {
-    img {
-        width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 
-    @media @mw5 {
-        width: 65px;
-        height: 57px;
-    }
+  @media @mw5 {
+    width: 65px;
+    height: 57px;
+  }
 }
 
 .header {
-    width: 68px;
-    height: 622px;
-    display: flex;
-    flex-direction: column;
+  width: 68px;
+  height: 622px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+
+  @media @mw2 {
+    height: auto;
+  }
+
+  @media @mw5 {
+    flex-direction: row;
     justify-content: space-between;
-    position: absolute;
-    right: 0;
+    align-items: center;
+  }
 
-    @media @mw2 {
-        height: auto;
-
-    }
-
-    @media @mw5 {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    @media @mw5 {
-        width: auto;
-
-    }
-
-
+  @media @mw5 {
+    width: auto;
+  }
 }
 
 .header__block {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &:hover {
+    color: #fff;
+  }
+
+  @media @mw5 {
+    .header__burger {
+      order: 2;
+      margin-left: 10px;
+    }
+
+    .header__contact {
+      order: 1;
+      margin-left: 10px;
+    }
+  }
+
+  &--burger {
+    @media @mw5 {
+      order: 2;
+    }
+  }
+
+  &--ig {
+    @media @mw2 {
+      margin-top: 72px;
+    }
+
+    @media @mw5 {
+      margin-top: 0;
+      order: 1;
+    }
+  }
+
+  @media @mw5 {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-
-    &:hover {
-        color: #FFF;
-    }
-
-    @media @mw5 {
-        .header__burger {
-            order: 2;
-            margin-left: 10px;
-        }
-
-        .header__contact {
-            order: 1;
-            margin-left: 10px;
-        }
-
-    }
-
-    &--burger {
-        @media @mw5 {
-            order: 2;
-        }
-    }
-
-    &--ig {
-        @media @mw2 {
-            margin-top: 72px;
-        }
-
-        @media @mw5 {
-            margin-top: 0;
-            order: 1;
-
-        }
-    }
-
-    @media @mw5 {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
+  }
 }
 
 .burger__icon {
-    display: block;
-    width: 43px;
-    height: 30px;
-    stroke: #79675F;
+  display: block;
+  width: 43px;
+  height: 30px;
+  stroke: #79675f;
 
-    @media @mw7 {
-
-        width: 34px;
-        height: 24px;
-    }
+  @media @mw7 {
+    width: 34px;
+    height: 24px;
+  }
 }
 
 .contact__icon {
+  width: 43px;
+  height: 50px;
+  fill: #79675f;
 
-    width: 43px;
-    height: 50px;
-    fill: #79675F;
-
-    @media @mw7 {
-
-        width: 34px;
-        height: 35px;
-    }
-
+  @media @mw7 {
+    width: 34px;
+    height: 35px;
+  }
 }
 
 .ig__icon {
+  width: 56px;
+  height: 47px;
+  fill: #79675f;
 
-    width: 56px;
-    height: 47px;
-    fill: #79675F;
-
-    @media @mw7 {
-
-        width: 38px;
-        height: 32px;
-    }
-
-
-}
-
-
-
-
-.contact__icon,
-.ig__icon,
-.burger__icon {
-
-
-    &:hover {
-        fill: #FBE6DC;
-        stroke: #FBE6DC;
-    }
-
-
+  @media @mw7 {
+    width: 38px;
+    height: 32px;
+  }
 }
 
 .contact__icon,
 .ig__icon,
 .burger__icon {
-
-
-
-    &:active {
-        fill: #FBE6DC;
-        stroke: #FBE6DC;
-    }
+  &:hover {
+    fill: #fbe6dc;
+    stroke: #fbe6dc;
+  }
 }
 
-
+.contact__icon,
+.ig__icon,
+.burger__icon {
+  &:active {
+    fill: #fbe6dc;
+    stroke: #fbe6dc;
+  }
+}
 
 .header__burger {
-    display: block;
-    width: 44px;
-    height: 28px;
-
+  display: block;
+  width: 44px;
+  height: 28px;
 }
 
 .nav__burger {
-    display: none;
-    width: 284px;
-    height: 320px;
-    border-radius: 61px 0 0 61px;
-    background: #F3CFB7;
+  display: none;
+  width: 284px;
+  height: 320px;
+  border-radius: 61px 0 0 61px;
+  background: #f3cfb7;
 
-    position: absolute;
-    right: 68px;
+  position: absolute;
+  right: 68px;
 
-    @media @mw5 {
+  @media @mw5 {
+    right: 0;
+    top: 73px;
+    border-radius: 0 0 61px 61px;
+  }
 
-        right: 0;
-        top: 73px;
-        border-radius: 0 0 61px 61px;
-    }
-
-
-
-    @media @mw8 {
-
-        width: 280px;
-    }
-
-
+  @media @mw8 {
+    width: 280px;
+  }
 }
 
-
-
-
 .nav__contact {
-    display: none;
-    width: 284px;
-    height: 276px;
-    border-radius: 61px 0 0 61px;
-    background: #F3CFB7;
+  display: none;
+  width: 284px;
+  height: 276px;
+  border-radius: 61px 0 0 61px;
+  background: #f3cfb7;
 
+  position: absolute;
+  right: 68px;
+  top: 73px;
 
-    position: absolute;
-    right: 68px;
-    top: 73px;
+  a {
+    margin-top: 48px;
+    color: #000;
+  }
 
-    a {
-        margin-top: 48px;
-        color: #000;
-    }
+  @media @mw5 {
+    height: 320px;
+    right: 0;
+    padding: 34px 0 82px 0;
+    border-radius: 0 0 61px 61px;
+  }
 
-    @media @mw5 {
-
-        height: 320px;
-        right: 0;
-        padding: 34px 0 82px 0;
-        border-radius: 0 0 61px 61px;
-    }
-
-    @media @mw8 {
-
-        width: 280px;
-    }
-
+  @media @mw8 {
+    width: 280px;
+  }
 }
 
 .burger_show,
 .contact_show {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav__link {
-    margin-top: 48px;
-    font-family: 'Georgia';
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    color: #000;
+  margin-top: 48px;
+  font-family: "Georgia";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: #000;
 }
-
-
-
-
-
-
 
 .main_header {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    position: absolute;
-    z-index: 10;
+  position: absolute;
+  z-index: 10;
 
+  @media @mw5 {
+    background: url("../img/main/fon.png") center;
 
-    @media @mw5 {
-        background: url("../img/main/fon.png") center;
-
-        position: fixed;
-        background-color: #CAA287;
-        margin: -16px;
-        padding: 16px;
-
-
-
-    }
-
-
-
+    position: fixed;
+    background-color: #caa287;
+    margin: -16px;
+    padding: 16px;
+  }
 }
 
-
-
-
 .main_header .header__contact {
-    margin-top: 40px;
+  margin-top: 40px;
 
+  @media @mw2 {
+    margin-top: 72px;
+  }
 
-    @media @mw2 {
-        margin-top: 72px;
-
-    }
-
-    @media @mw5 {
-        margin-top: 0;
-
-    }
-
+  @media @mw5 {
+    margin-top: 0;
+  }
 }
