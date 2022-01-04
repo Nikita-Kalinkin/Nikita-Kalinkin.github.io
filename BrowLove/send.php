@@ -1,6 +1,6 @@
 <?php
  $name = ($_POST['name']); //переменная input с атрибутом name="name"
- $phone = ($_POST['phone']); //переменная input с атрибутом name="phone"
+ $phone = ($_POST['tel']); //переменная input с атрибутом name="tel"
  $email = ($_POST['email']); //переменная input с атрибутом name="email"
 //В переменную $token нужно вставить токен, который нам прислал @botFather
 $token = "1975117798:AAHwNJqJnOK3l2t5HaE5fd-osINhJVgXETg";
@@ -11,7 +11,7 @@ $chat_id = "-1001512087010";
 //Собираем в массив то, что будет передаваться боту
     $arr = array(
         'Имя:' => $name,
-        'Телефон:' => $phone,
+        'Телефон:' => $tel,
         'E-mail:' => $email,
     );
 
