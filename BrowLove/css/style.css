@@ -455,7 +455,7 @@ h4 {
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
-  color: #000;
+  color: #000 !important;
 }
 .main_header {
   width: 100%;
