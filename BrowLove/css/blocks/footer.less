@@ -2,112 +2,101 @@
 @import "../vars.less";
 
 .footer {
-    background: url("../img/main/fon.png");
-    background-position: center;
-    background-color: #FFDAC0;
-    padding: 120px 0;
+  background: url("../img/main/fon.png");
+  background-position: center;
+  background-color: #ffdac0;
+  padding: 120px 0;
 
-    @media @mw5 {
-        padding: 60px 0;
-
-    }
+  @media @mw5 {
+    padding: 60px 0;
+  }
 }
 
 .footer__block {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 
-    @media @mw5 {
-        justify-content: space-between;
-    }
+  @media @mw5 {
+    justify-content: space-between;
+  }
 
-    @media @mw7 {}
+  @media @mw7 {
+  }
 }
 
 .footer__content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px;
 
-    .logo {
-        margin-bottom: 50px;
+  .logo {
+    margin-bottom: 50px;
 
-        @media @mw5 {
-            margin-bottom: 0;
-        }
+    @media @mw5 {
+      margin-bottom: 0;
+    }
+  }
+
+  &--logo {
+    width: 362px;
+
+    @media @mw3 {
+      width: auto;
+    }
+  }
+
+  &--contact {
+    a {
+      padding-top: 20px;
+      color: #000;
+      width: 182px;
     }
 
-    &--logo {
-        width: 362px;
+    h3 {
+      padding-bottom: 14px;
+    }
+  }
 
-        @media @mw3 {
-            width: auto;
-
-        }
-
-
-
-
+  &--main {
+    button {
+      padding-top: 20px;
+      font-family: "Georgia";
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      width: 94px;
     }
 
-    &--contact {
-        a {
-            padding-top: 20px;
-            color: #000;
-            width: 182px;
-        }
-
-        h3 {
-            padding-bottom: 14px;
-        }
-
-
-
+    h3 {
+      padding-bottom: 14px;
     }
 
-    &--main {
-        button {
-            padding-top: 20px;
-            font-family: 'Georgia';
-            font-size: 18px;
-            font-weight: normal;
-            font-style: normal;
-            width: 94px;
-        }
-
-        h3 {
-            padding-bottom: 14px;
-        }
-
-        @media @mw5 {
-            display: none;
-
-        }
+    @media @mw5 {
+      display: none;
     }
+  }
 
+  &:nth-child(3n) {
+    padding-right: 0;
+  }
 
-    &:nth-child(3n) {
-        padding-right: 0;
-    }
-
-
-
-
+  .nav__link {
+    margin-top: 0px;
+  }
 }
 
 .footer__course {
-    margin-bottom: 18px;
-    color: #79675F;
+  margin-bottom: 18px;
+  color: #79675f;
 
-    @media @mw5 {
-        display: none;
-
-    }
+  @media @mw5 {
+    display: none;
+  }
 }
 
 .footer__brow {
-    @media @mw5 {
-        display: none;
-    }
+  @media @mw5 {
+    display: none;
+  }
 }

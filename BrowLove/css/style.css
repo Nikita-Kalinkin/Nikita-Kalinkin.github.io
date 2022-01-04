@@ -85,7 +85,7 @@ php файл при отправки формы показывает стран�
 */
 body {
   margin: 0 auto;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -102,7 +102,7 @@ body.no-scroll {
 /*Заголовки постоянные*/
 h1 {
   font-size: 64px;
-  font-family: 'Conv_Zetafonts - Lovelace Text Regular';
+  font-family: "Conv_Zetafonts - Lovelace Text Regular";
   line-height: 65px;
   font-weight: normal;
   font-style: normal;
@@ -115,7 +115,7 @@ h1 {
 }
 h2 {
   font-size: 48px;
-  font-family: 'Conv_Zetafonts - Lovelace Text Regular';
+  font-family: "Conv_Zetafonts - Lovelace Text Regular";
   line-height: 48px;
   font-weight: normal;
   font-style: normal;
@@ -128,7 +128,7 @@ h2 {
 }
 h3 {
   font-size: 24px;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-weight: normal;
   font-style: normal;
 }
@@ -141,7 +141,7 @@ h3 {
 /*Отступы постоянные*/
 h4 {
   font-size: 14px;
-  font-family: 'Conv_Zetafonts - Lovelace Text Regular';
+  font-family: "Conv_Zetafonts - Lovelace Text Regular";
   line-height: 14px;
   font-weight: normal;
   font-style: normal;
@@ -169,7 +169,7 @@ h4 {
   justify-content: center;
   position: relative;
   font-size: 18px;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-weight: normal;
   font-style: normal;
   color: #000000;
@@ -192,7 +192,7 @@ h4 {
   content: "";
   width: 412px;
   height: 68px;
-  border: 1px solid #79675F;
+  border: 1px solid #79675f;
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
@@ -213,7 +213,7 @@ h4 {
   content: " ";
   width: 412px;
   height: 68px;
-  border: 1px solid #79675F;
+  border: 1px solid #79675f;
   border-radius: 50%;
   transform: rotate(-4deg);
   position: absolute;
@@ -309,7 +309,7 @@ h4 {
   position: relative;
 }
 .header__block:hover {
-  color: #FFF;
+  color: #fff;
 }
 @media (max-width: 689px) {
   .header__block .header__burger {
@@ -348,7 +348,7 @@ h4 {
   display: block;
   width: 43px;
   height: 30px;
-  stroke: #79675F;
+  stroke: #79675f;
 }
 @media (max-width: 430px) {
   .burger__icon {
@@ -359,7 +359,7 @@ h4 {
 .contact__icon {
   width: 43px;
   height: 50px;
-  fill: #79675F;
+  fill: #79675f;
 }
 @media (max-width: 430px) {
   .contact__icon {
@@ -370,7 +370,7 @@ h4 {
 .ig__icon {
   width: 56px;
   height: 47px;
-  fill: #79675F;
+  fill: #79675f;
 }
 @media (max-width: 430px) {
   .ig__icon {
@@ -381,14 +381,14 @@ h4 {
 .contact__icon:hover,
 .ig__icon:hover,
 .burger__icon:hover {
-  fill: #FBE6DC;
-  stroke: #FBE6DC;
+  fill: #fbe6dc;
+  stroke: #fbe6dc;
 }
 .contact__icon:active,
 .ig__icon:active,
 .burger__icon:active {
-  fill: #FBE6DC;
-  stroke: #FBE6DC;
+  fill: #fbe6dc;
+  stroke: #fbe6dc;
 }
 .header__burger {
   display: block;
@@ -400,7 +400,7 @@ h4 {
   width: 284px;
   height: 320px;
   border-radius: 61px 0 0 61px;
-  background: #F3CFB7;
+  background: #f3cfb7;
   position: absolute;
   right: 68px;
 }
@@ -421,7 +421,7 @@ h4 {
   width: 284px;
   height: 276px;
   border-radius: 61px 0 0 61px;
-  background: #F3CFB7;
+  background: #f3cfb7;
   position: absolute;
   right: 68px;
   top: 73px;
@@ -451,11 +451,11 @@ h4 {
 }
 .nav__link {
   margin-top: 48px;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
-   color: #000;
+  color: #000;
 }
 .main_header {
   width: 100%;
@@ -469,7 +469,7 @@ h4 {
   .main_header {
     background: url("../img/main/fon.png") center;
     position: fixed;
-    background-color: #CAA287;
+    background-color: #caa287;
     margin: -16px;
     padding: 16px;
   }
@@ -489,7 +489,7 @@ h4 {
 }
 .main {
   background: url("../img/main/fon.png") center;
-  background-color: #D7AD91;
+  background-color: #d7ad91;
   height: 784px;
   padding-top: 16px;
   margin: 0 auto;
@@ -595,7 +595,7 @@ h4 {
   margin-bottom: 18px;
 }
 .title_h2 span {
-  color: #79675F;
+  color: #79675f;
 }
 @media (max-width: 689px) {
   .title_h2 {
@@ -631,7 +631,7 @@ h4 {
 .course {
   background: url("../img/main/fon.png");
   background-position: center;
-  background-color: #FFDAC0;
+  background-color: #ffdac0;
   padding: 120px 0;
 }
 @media (max-width: 689px) {
@@ -701,7 +701,7 @@ h4 {
 .rezult {
   background: url("../img/main/fon.png");
   background-position: center;
-  background-color: #D7AD91;
+  background-color: #d7ad91;
   padding: 120px 0;
 }
 @media (max-width: 689px) {
@@ -770,7 +770,7 @@ h4 {
 .tariffs {
   background: url("../img/main/fon.png");
   background-position: center;
-  background-color: #FFF0E5;
+  background-color: #fff0e5;
   padding: 120px 0;
 }
 @media (max-width: 689px) {
@@ -883,7 +883,7 @@ h4 {
 .works {
   background: url("../img/main/fon.png");
   background-position: center;
-  background-color: #FFDAC0;
+  background-color: #ffdac0;
   padding: 120px 0;
 }
 @media (max-width: 689px) {
@@ -946,7 +946,7 @@ h4 {
 }
 .form {
   background: url("../img/main/fon.png");
-  background-color: #D7AD91;
+  background-color: #d7ad91;
   padding: 120px 0 0 0;
   height: 883px;
   margin: 0 auto;
@@ -1026,7 +1026,7 @@ h4 {
   border: 1px solid #000000;
   background: url("../img/main/fon.png");
   background-position: center;
-  background-color: #D7AD91;
+  background-color: #d7ad91;
   padding-left: 16px;
 }
 @media (max-width: 689px) {
@@ -1081,7 +1081,7 @@ h4 {
   height: 407px;
   overflow: auto;
   border-radius: 94px;
-  background-color: #E8C2A9;
+  background-color: #e8c2a9;
   position: fixed;
   top: 25%;
   left: 25%;
@@ -1094,7 +1094,7 @@ h4 {
   width: 100%;
   position: relative;
   transform: scale(0);
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 .modal__close {
   width: 42px;
@@ -1105,7 +1105,7 @@ h4 {
   top: 28px;
   right: 28px;
   cursor: pointer;
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 .modal__close button:before {
   width: 1px;
@@ -1132,7 +1132,7 @@ h4 {
 .footer {
   background: url("../img/main/fon.png");
   background-position: center;
-  background-color: #FFDAC0;
+  background-color: #ffdac0;
   padding: 120px 0;
 }
 @media (max-width: 689px) {
@@ -1158,6 +1158,9 @@ h4 {
 .footer__content .logo {
   margin-bottom: 50px;
 }
+.footer__content .nav__link {
+  margin-top: 0px;
+}
 @media (max-width: 689px) {
   .footer__content .logo {
     margin-bottom: 0;
@@ -1181,7 +1184,7 @@ h4 {
 }
 .footer__content--main button {
   padding-top: 20px;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1200,7 +1203,7 @@ h4 {
 }
 .footer__course {
   margin-bottom: 18px;
-  color: #79675F;
+  color: #79675f;
 }
 @media (max-width: 689px) {
   .footer__course {
