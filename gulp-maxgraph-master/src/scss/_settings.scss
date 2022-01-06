@@ -73,3 +73,7 @@ a {
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+ul, li, ol {
+  list-style: none;
+}
