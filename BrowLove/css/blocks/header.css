@@ -41,7 +41,7 @@
   position: relative;
 }
 .header__block:hover {
-  color: #FFF;
+  color: #fff;
 }
 @media (max-width: 689px) {
   .header__block .header__burger {
@@ -80,7 +80,7 @@
   display: block;
   width: 43px;
   height: 30px;
-  stroke: #79675F;
+  stroke: #79675f;
 }
 @media (max-width: 430px) {
   .burger__icon {
@@ -91,7 +91,7 @@
 .contact__icon {
   width: 43px;
   height: 50px;
-  fill: #79675F;
+  fill: #79675f;
 }
 @media (max-width: 430px) {
   .contact__icon {
@@ -102,7 +102,7 @@
 .ig__icon {
   width: 56px;
   height: 47px;
-  fill: #79675F;
+  fill: #79675f;
 }
 @media (max-width: 430px) {
   .ig__icon {
@@ -113,14 +113,14 @@
 .contact__icon:hover,
 .ig__icon:hover,
 .burger__icon:hover {
-  fill: #FBE6DC;
-  stroke: #FBE6DC;
+  fill: #fbe6dc;
+  stroke: #fbe6dc;
 }
 .contact__icon:active,
 .ig__icon:active,
 .burger__icon:active {
-  fill: #FBE6DC;
-  stroke: #FBE6DC;
+  fill: #fbe6dc;
+  stroke: #fbe6dc;
 }
 .header__burger {
   display: block;
@@ -132,7 +132,7 @@
   width: 284px;
   height: 320px;
   border-radius: 61px 0 0 61px;
-  background: #F3CFB7;
+  background: #f3cfb7;
   position: absolute;
   right: 68px;
 }
@@ -153,7 +153,7 @@
   width: 284px;
   height: 276px;
   border-radius: 61px 0 0 61px;
-  background: #F3CFB7;
+  background: #f3cfb7;
   position: absolute;
   right: 68px;
   top: 73px;
@@ -183,10 +183,11 @@
 }
 .nav__link {
   margin-top: 48px;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
+  color: #000;
 }
 .main_header {
   width: 100%;
@@ -200,7 +201,7 @@
   .main_header {
     background: url("../img/main/fon.png") center;
     position: fixed;
-    background-color: #CAA287;
+    background-color: #caa287;
     margin: -16px;
     padding: 16px;
   }

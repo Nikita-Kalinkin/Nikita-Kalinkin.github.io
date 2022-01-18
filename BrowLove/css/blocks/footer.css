@@ -2,7 +2,7 @@
 .footer {
   background: url("../img/main/fon.png");
   background-position: center;
-  background-color: #FFDAC0;
+  background-color: #ffdac0;
   padding: 120px 0;
 }
 @media (max-width: 689px) {
@@ -11,18 +11,29 @@
   }
 }
 .footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 @media (max-width: 689px) {
   .footer__block {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-right: 30px;
 }
 .footer__content .logo {
@@ -49,13 +60,17 @@
 .footer__content--contact h3 {
   padding-bottom: 14px;
 }
+.footer__content--main {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 .footer__content--main button {
   padding-top: 20px;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
-  width: 94px;
 }
 .footer__content--main h3 {
   padding-bottom: 14px;
@@ -68,9 +83,12 @@
 .footer__content:nth-child(3n) {
   padding-right: 0;
 }
+.footer__content .nav__link {
+  margin-top: 0px;
+}
 .footer__course {
   margin-bottom: 18px;
-  color: #79675F;
+  color: #79675f;
 }
 @media (max-width: 689px) {
   .footer__course {

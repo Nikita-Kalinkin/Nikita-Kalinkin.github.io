@@ -63,6 +63,9 @@
 .form__group {
   margin-top: 24px;
 }
+.form__group h4 {
+  margin-bottom: 6px;
+}
 @media (max-width: 689px) {
   .form__group {
     margin-top: 18px;
@@ -70,9 +73,6 @@
 }
 .form__group:nth-child(1) {
   margin-top: 0;
-}
-.form__title h4 {
-  margin-bottom: 6px;
 }
 .form__input {
   width: 656px;
