@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Главная</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <nav class="nav" title="">
+      <ul class="list-reset nav__list">
+        <li class="nav__item nav__item--logo">
+          <a href="#" class="logo">
+            <picture>
+              <source srcset="img/logo.avif" type="image/avif">
+              <source srcset="img/logo.webp" type="image/webp">
+              <img loading="lazy" src="img/logo.jpg" class="image" width="36" height="36" alt="logo">
+            </picture>
+          </a>
+         </li>
+        <li class="nav__item nav__item--btn">
+          <form class="form-search">
+            <input class="search" type="search" placeholder="Search" aria-label="Search">
+            <a href="#" class="icon__btn" >
+              <svg class="header__icon" stroke-width="2">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </a>
+          </form>
+          <a href="#" class="icon__btn icon__btn--shopping-cart" >
+            <svg class="header__icon" stroke-width="2">
+              <use xlink:href="img/sprite.svg#shopping-cart"></use>
+            </svg>
+          </a>
+          <a class="btn registration" data-custom-open="modal-up" >
+           Sign Up
+          </a>
+          <a class="btn login" data-custom-open="modal-in" >
+            Sign In
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="main">
+  <div class="container">
+    <div class="main__Slider" id="mainSlider">
+      <div class="slick-item">
+        <div class="main__item">
+          <div class="main__photo">
+            <img class="main__img" src="img/main/main-1.jpg" alt="Kembang Flower Mantap">
+          </div>
+          <div class="main__content">
+            <h1 class="main__title">Kembang <br> Flower Mantap</h1>
+            <div class="main__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s</div>
+          </div>
+        </div>
+      </div>
+      <div class="slick-item">
+        <div class="main__item">
+          <div class="main__photo">
+            <img class="main__img" src="img/main/main-2.jpg" alt="Kembang Flower Mantap">
+          </div>
+          <div class="main__content">
+            <h1 class="main__title">Kembang <br> Flower Mantap</h1>
+            <div class=""><span class="main__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
+            dummy text ever since the 1500s</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="main-slider">
+      <button class="btn-slider prev">
+        <span class="arrow arrow--prew">Previous</span>
+        <span>Kaktus Plant</span>
+      </button>
+      <button class="btn-slider next">
+        <span class="arrow arrow--next">Next</span>
+        <span>Rahasia Plant</span>
+      </button>
+    </div>
+
+  </div>
+</main>
+
+    <section class="service">
+  <div class="container">
+    <ul class="service__block list-reset ">
+      <li class="service__list">
+        <p class="sub__block">
+          <svg class="sub-svg" stroke-width="2">
+            <use xlink:href="img/sprite.svg#service-1" ></use>
+          </svg>
+          <span class="subtitle">
+              Fast Delivery
+          </span>
+        </p>
+        <p class="sub_text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
+        </p>
+      </li>
+      <li class="service__list">
+        <p class="sub__block">
+          <svg class="sub-svg" stroke-width="2">
+            <use xlink:href="img/sprite.svg#service-2"></use>
+          </svg>
+          <span class="subtitle">
+            Great Customer Service
+          </span>
+        </p>
+        <p class="sub_text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
+          standard
+        </p>
+      </li>
+      <li class="service__list">
+        <p class="sub__block">
+          <svg class="sub-svg" stroke-width="2">
+            <use xlink:href="img/sprite.svg#service-3"></use>
+          </svg>
+          <span class="subtitle">
+            Original Plants
+          </span>
+        </p>
+        <p class="sub_text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
+          standard
+        </p>
+      </li>
+
+      <li class="service__list">
+        <p class="sub__block">
+          <svg class="sub-svg" stroke-width="2">
+            <use xlink:href="img/sprite.svg#service-4"></use>
+          </svg>
+          <span class="subtitle">
+            Affordable Price
+          </span>
+        </p>
+        <p class="sub_text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
+          standard
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="featured">
+  <div class="container">
+    <div class="featured__block-title">
+      <span class="featured__title">Featured Plants</span>
+
+<form class="select">
+  <input class="select__input" type="hidden" name="">
+  <div class="select__head">Default sorting</div>
+  <ul class="select__list" style="display: none;">
+    <li class="select__item">Sort by popularity</li>
+    <li class="select__item">Rating</li>
+    <li class="select__item">Sort by latest</li>
+  </ul>
+</form>
+
+    </div>
+    <div class="featured__block-plants">
+      <div class="fearured__plants">
+        <picture class="img__plants">
+          <source srcset="img/featured/featured-1.avif" type="image/avif">
+          <source srcset="img/featured/featured-1.webp" type="image/webp">
+          <img loading="lazy" src="img/featured/featured-1.jpg" class="image" width="217" height="217" alt="plants">
+        </picture>
+        <span class="name__plants">Kaktus Plants</span>
+        <span class="price__plants">IDR 85.000</span>
+      </div>
+        <div class="fearured__plants">
+          <picture class="img__plants">
+            <source srcset="img/featured/featured-2.avif" type="image/avif">
+            <source srcset="img/featured/featured-2.webp" type="image/webp">
+            <img loading="lazy" src="img/featured/featured-2.jpg" class="image" width="217" height="217" alt="plants">
+          </picture>
+          <span class="name__plants">Landak Plants</span>
+          <span class="price__plants">IDR 105.000</span>
+        </div>
+          <div class="fearured__plants">
+            <picture class="img__plants">
+              <source srcset="img/featured/featured-3.avif" type="image/avif">
+              <source srcset="img/featured/featured-3.webp" type="image/webp">
+              <img loading="lazy" src="img/featured/featured-3.jpg" class="image" width="217" height="217" alt="plants">
+            </picture>
+            <span class="name__plants">Kecubung Plants</span>
+            <span class="price__plants">IDR 85.000</span>
+          </div>
+            <div class="fearured__plants">
+              <picture class="img__plants">
+                <source srcset="img/featured/featured-4.avif" type="image/avif">
+                <source srcset="img/featured/featured-4.webp" type="image/webp">
+                <img loading="lazy" src="img/featured/featured-4.jpg" class="image" width="217" height="217" alt="plants">
+              </picture>
+              <span class="name__plants">Kecubung Plants</span>
+              <span class="price__plants">IDR 85.000</span>
+            </div>
+              <div class="fearured__plants">
+                <picture class="img__plants">
+                  <source srcset="img/featured/featured-5.avif" type="image/avif">
+                  <source srcset="img/featured/featured-5.webp" type="image/webp">
+                  <img loading="lazy" src="img/featured/featured-5.jpg" class="image" width="217" height="217" alt="plants">
+                </picture>
+                <span class="name__plants">Kecubung Plants</span>
+                <span class="price__plants">IDR 85.000</span>
+              </div>
+
+    </div>
+  </div>
+</section>
+
+    <section class="relaxed">
+  <div class="container">
+    <div class="relaxed_block">
+      <div class="relaxed_block__title">
+        <div class="">
+          <span class="subtitle-h2">Buy more plants, it helps you to be relaxed</span>
+          <p class="relaxed_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida gravida aliquam. Pellentesque et lobortis nisl.
+            Sed et mauris justo. Nulla eu enim non mauris maximus dignissim. Maecenas vitae eros sapien. Quisque pellentesque tempus
+            dignissim.</p>
+        </div>
+       <picture class="">
+         <source srcset="img/relaxed/relaxed-1.avif" type="image/avif">
+         <source srcset="img/relaxed-1.webp" type="image/webp">
+         <img loading="lazy" src="img/relaxed/relaxed-1.jpg" class="image" width="568" height="250" alt="">
+       </picture>
+      </div>
+      <picture class="relaxed__img">
+        <source srcset="img/relaxed/relaxed-2.avif" type="image/avif">
+        <source srcset="img/relaxed/relaxed-2.webp" type="image/webp">
+        <img loading="lazy" src="img/relaxed/relaxed-2.jpg" class="image" width="513" height="610" alt="plants">
+      </picture>
+    </div>
+  </div>
+</section>
+
+    <section class="visit-shop">
+  <div class="container">
+    <div class="visit-shop__block">
+      <div class="visit-shop__block_title">
+          <p class="visit-shop__title" >Get your favourites plant on our shop now</p>
+        <a class="btn visit-shop__btn" href="#">Visit Shop</a>
+      </div>
+      <picture class="visit-shop__img">
+        <source srcset="img/visit-shop/visit-shop-1.avif" type="image/avif">
+        <source srcset="img/visit-shop/visit-shop-1.webp" type="image/webp">
+        <img loading="lazy" src="img/visit-shop/visit-shop-1.jpg" class="image" width="480" height="360" alt="plants">
+      </picture>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+  <div class="container">
+    <nav class="footer_nav">
+      <ul class="nav_item list-reset">
+        <li class="footer_list">
+          <span class="footer_logo">plantku</span>
+          <span class="footer_subtitle">Plantku House</span>
+          <address class="footer_address">Jl. Laksda Adisucipto No.51, Demangan, Kec. Depok, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55282</address>
+        </li>
+        <li class="footer_list">
+          <span class="footer_subtitle">Perusahaan</span>
+          <a class="footer_link">Tentang Kami</a>
+          <a class="footer_link">Hubungi Kami</a>
+        </li>
+        <li class="footer_list">
+          <span class="footer_subtitle">Produk</span>
+          <a class="footer_link">Tanaman</a>
+          <a class="footer_link">Tanaman Lain</a>
+        </li>
+        <li class="footer_list">
+          <span class="footer_subtitle">Berlangganan Email Kami</span>
+        <form class="form" action="#" method="post">
+          <label for="email"></label>
+          <input class="form__input" type="email" name="email" id="email" placeholder="Masukan Alamat Email" required="">
+          <button class="footer__btn btn-reset">Submit</button>
+        </form>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    <div class="modal micromodal-slide" id="modal-in" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" >
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+      <header class="modal__header">
+        <h3 class="modal__title" id="modal-2-title"> 🔒 Login </h3>
+        <button class="modal__close btn-reset" aria-label="Close modal" data-custom-close></button>
+      </header>
+      <form class="form__modal-in" action="#">
+        <div class="modal__content" id="modal-2-content">
+          <div class="measure">
+            <label class="measure__label" for="in-name" >Name</label>
+            <input class="input-reset measure__input" id="in-name"  type="text" placeholder="UserName" required="">
+            <label class="measure__label" for="in-pass" autocomplete ="current-password" >Password </label>
+            <input class="input-reset measure__input" id="in-pass" placeholder="Password" type="password" required="">
+            <small class="" id="name-desc" >Must be atleast 6 characters long.</small>
+          </div>
+        </div>
+        <div class="modal__btn">
+          <input class="modal__btn btn modal__btn--help" type="submit" value="Login">
+          <a class=" modal__btn btn " href="#" data-custom-close>Cancel</a>
+        </div>
+        <footer class="modal__footer">
+          <a class="footer__option" >Забыли пароль?</a>
+          <span class="footer__help">|</span>
+          <a class="footer__option"  data-custom-open="modal-up">Регистрация</a>
+        </footer>
+      </form>
+    </div>
+  </div>
+</div>
+
+    <div class="modal micromodal-slide" id="modal-up" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1">
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+      <header class="modal__header">
+        <h3 class="modal__title" id="modal-1-title"> 🔒 Register </h3>
+        <button class="modal__close btn-reset" aria-label="Close modal" data-custom-close></button>
+      </header>
+      <form class="form__modal-in" action="#">
+        <div class="modal__content" id="modal-1-content">
+          <div class="measure">
+            <label class="measure__label" for="in-name">Name</label>
+            <input class="input-reset measure__input" id="up-name" type="text" placeholder="UserName" required="">
+            <label class="measure__label" for="up-pass" autocomplete ="new-password" >Password </label>
+            <input class="input-reset measure__input" id="up-pass" placeholder="Password" type="password" required="">
+            <label class="measure__label" for="repeat-pass" >Repeat password </label>
+            <input class="input-reset measure__input" id="repeat-pass" placeholder="Repeat password" type="password" required="">
+            <small class="" id="name-desc">Must be atleast 6 characters long.</small>
+          </div>
+        </div>
+        <footer class="modal__btn">
+          <input class="modal__btn btn modal__btn--help" type="submit" value="Login">
+          <a class=" modal__btn btn " href="#" data-custom-close>Cancel</a>
+        </footer>
+      </form>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+
+</html>
