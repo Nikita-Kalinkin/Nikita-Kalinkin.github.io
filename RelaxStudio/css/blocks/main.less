@@ -1,0 +1,75 @@
+// main: ../style.less
+@import "../vars.less";
+
+.main {
+     background: url("../img/main/1.png") center center;
+     background-size: cover;
+     height: 100%;
+    height: 784px;   
+    margin: 0 auto;
+
+    .clearfix::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+    @media @mw4 {
+        height: 600px;
+       }
+
+       @media @mw6 {
+        height: 700px;
+       }
+    
+    
+}
+
+.main-spa {
+ margin-top: 200px;
+ float: right;
+ 
+ @media @mw4 {
+    margin-top: 100px;
+   }
+
+   @media @mw6 {
+    margin-top: 60px;
+    float: none;
+   }
+
+}
+
+.spa-title {
+    max-width: 670px;
+
+    .title_h1 {
+        margin-bottom: 25px;
+    }
+
+    .title_h2 {
+        margin-bottom: 10px;
+    }
+
+    .title_h4 {
+        max-width: 500px;
+    }
+}
+
+.spa-btn {
+    margin-top: 68px;
+    display: flex;
+
+   @media @mw6 {
+       margin-top: 30px;
+       flex-direction: column;
+   }
+
+   .btn-services {
+    @media @mw6 {
+        margin-top: 15px;
+      
+    }
+   }
+
+    
+}

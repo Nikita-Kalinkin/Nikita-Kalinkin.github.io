@@ -1,0 +1,109 @@
+.services {
+  margin: 60px 0 120px 0;
+}
+.services .title_h2 {
+  text-align: center;
+}
+.services-block {
+  margin-top: 65px;
+  display: flex;
+}
+.services-left {
+  margin-right: 75px;
+}
+.services-list {
+  width: 423px;
+  margin: 0 0 14px 0;
+}
+.services-list .accordion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+  font-size: 24px;
+}
+.accordion:after {
+  display: grid;
+  align-items: center;
+  content: url(../img/services/VectorButtom.svg);
+  /* Unicode character for "plus" sign (vector_top) */
+  margin-left: 5px;
+}
+.active {
+  transition: 0.4s;
+}
+.active:after {
+  display: grid;
+  align-items: center;
+  content: url(../img/services/VectorTop.svg);
+  /* Unicode character for "minus" sign (vector_botton) */
+}
+.services-list__text {
+  display: none;
+  margin: 40px 0 40px 0;
+}
+.services-btn {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding-left: 42px;
+  margin: 0 0 18px 60px;
+  width: 300px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  position: relative;
+}
+.services-btn::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 29px;
+  height: 2px;
+  background-color: #BAD8D8;
+}
+.services-list_two {
+  margin-left: 40px;
+}
+.services-right {
+  border-left: 2px solid #BAD8D8;
+}
+.services-right .title_h3 {
+  margin-left: 100px;
+}
+.right-block_one {
+  margin: 38px 0 38px 100px;
+}
+.right-block_one p {
+  margin: 0 0 19px 0;
+}
+.right-block_two {
+  margin: 0 0 38px 0;
+}
+.services-right-list {
+  display: flex;
+  align-items: center;
+  padding-left: 42px;
+  margin: 0 0 19px 58px;
+  position: relative;
+}
+.services-right-list::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 29px;
+  height: 2px;
+  background-color: #BAD8D8;
+}
+.services-block__btn {
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.services-prices {
+  font-size: 24px;
+}

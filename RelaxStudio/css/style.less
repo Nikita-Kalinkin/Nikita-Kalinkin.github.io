@@ -1,0 +1,115 @@
+
+
+@import "vars.less";
+/*Обнуление*/
+@import "zeroing.less";
+/*Fonts*/
+@import "../fonts/mak/fonts.css";
+
+body {
+   background-color: #181C1C;
+   
+    margin: 18px auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+
+    @media @mw4 {
+        font-size: 14px;
+        
+       
+       }
+    }
+
+/*Заголовки постоянные*/
+
+h1 {
+    font-size: 96px;
+    font-family: 'Conv_MAK';;
+    line-height: 96px;
+
+    font-weight: normal;
+    font-style: normal;
+
+    @media @mw4 {
+        font-size: 72px;
+        line-height: 72px;
+       }
+
+}
+
+h2 {
+    font-size: 48px;
+    font-family: 'Conv_MAK';;
+    line-height: 48px;
+    font-weight: normal;
+    font-style: normal;
+
+    @media @mw4 {
+        font-size: 36px;
+        line-height: 36px;
+       }
+
+}
+
+h3 {
+    font-size: 30px;
+    font-family: 'Conv_MAK';;
+    line-height: 36px;
+    font-weight: normal;
+    font-style: normal;
+    /* Relax studio - сочетание уютной атмосферы и качества обслуживания */
+    @media @mw4 {
+        font-size: 24px;
+        line-height: 24px;
+       }
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    @media @mw4 {
+        font-size: 16px;
+        line-height: 16px;
+       }
+}
+/*Отступы постоянные*/
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1256px;
+    padding: 0 40px;
+    margin: 0 auto;
+
+    @media @mw4 {
+        max-width: 1208px;
+    padding: 0 16px;
+       }
+    
+}
+
+
+
+/* Block */
+@import "blocks/btn.less";
+@import "blocks/header.less";
+@import "blocks/main.less";
+@import "blocks/company.less";
+@import "blocks/services.less";
+@import "blocks/spaform.less";
+@import "blocks/sale.less";
+@import "blocks/contact.less";
+@import "blocks/footer.less";
+
+

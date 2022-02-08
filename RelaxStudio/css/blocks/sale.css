@@ -1,0 +1,37 @@
+.sale {
+  margin-top: 120px;
+}
+.sale .container {
+  max-width: 1440px;
+}
+.sale .title_h2 {
+  text-align: center;
+}
+.sale-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+.sale-block .title_h3 {
+  max-width: 358px;
+  margin: 16px;
+}
+.sale-block__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  width: 560px;
+  height: 480px;
+  border-radius: 130px 0 130px 0;
+}
+.sale-block__img--one {
+  background: url(../img/sale/1.png) center;
+}
+.sale-block__img--two {
+  margin: 0 24px;
+}
+.sale-block__img--tree {
+  background: url(../img/sale/3.png) center;
+}

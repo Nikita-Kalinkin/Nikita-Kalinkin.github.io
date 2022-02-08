@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!------CSS------->
+    <link rel="stylesheet" href="css/style.css">
+    <!------Fonts------->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/mak/fonts.css" type="text/css" charset="utf-8">
+    <!------Script------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Sprite -->
+    <svg style="display: none;">
+        <symbol id="burger__icon" viewBox="0 0 43 30">
+            <!-- Sprite burger.svg -->
+            <g>
+                <path d="M0 1H43" stroke-width="2" />
+                <path d="M0 10.1168H43" stroke-width="2" />
+                <path d="M0 19.2336H43" stroke-width="2" />
+                <path d="M0 28.3504H43" stroke-width="2" />
+            </g>
+        </symbol><!-- /Sprite burger.svg -->
+        <symbol id="contact__icon" viewBox="0 0 28 28">
+            <!-- Sprite contact.svg -->
+            <g>
+                <path
+                    d="M1.59325 9.33333L1.55556 9.22598C0.716166 6.81981 0 3.53111 0 1.55556C0 0.7 0.7 0 1.55556 0H6.22222C7.94044 0 9.33333 1.39289 9.33333 3.11111V6.22222C9.33333 7.94044 7.94044 9.33333 6.22222 9.33333H4.92028C7.44577 15.5724 12.4276 20.5542 18.6667 23.0797V21.7778C18.6667 20.0596 20.0596 18.6667 21.7778 18.6667H24.8889C26.6071 18.6667 28 20.0596 28 21.7778V26.4444C28 27.1444 27.1444 28 26.4444 28C23.7604 28 21.0943 27.2913 18.6667 26.4444C10.7108 23.5948 4.40525 17.2892 1.59325 9.33333Z" />
+            </g>
+        </symbol><!-- /Sprite contact.svg -->
+
+    </svg> <!-- Sprite -->
+
+    <div class="main">
+        <!-- main -->
+        <div class="container">
+            <!-- container -->
+            <header class="header">
+                <!-- header -->
+                <div class="logo">
+                    <img src="img/main/logo.png" alt="">
+                </div>
+                <div class="list-menu" id="nav">
+                    <!-- list-menu -->
+                    <a class="menu-item" href="#" data-scroll="#company"> О компании</a>
+                    <a class="menu-item" href="#" data-scroll="#services"> Услуги</a>
+                    <a class="menu-item" href="#" data-scroll="#sale"> Акции</a>
+                    <a class="menu-item" href="#" data-scroll="#contact"> Контакты</a>
+                </div><!-- /list-menu -->
+
+                <div class="list-contact">
+                    <!-- list-contact -->
+                    <a class="contact-phone" href="tel:+78009287384">
+                        <svg class="contact__icon">
+                            <use xlink:href="#contact__icon"></use>
+                        </svg>
+                        <span class="contact-text"> +7 (800) 928-73-84</span>
+                    </a>
+                    <button class="header__burger" type="button" id="navToggle">
+                        <svg class="burger__icon">
+                            <use xlink:href="#burger__icon"></use>
+                        </svg>
+                    </button>
+                </div><!-- /list-contact -->
+            </header><!-- /header -->
+            <div class="main-spa">
+                <!-- main-spa -->
+                <div class="spa-title">
+                    <!-- spa-title -->
+                    <div class="title_h2">
+                        <h2>Spa-салон премиум класса</h2>
+                    </div>
+                    <div class="title_h1">
+                        <h1>Relax studio</h1>
+                    </div>
+                    <div class="title_h4">
+                        <h4>Идеальное место для восстановления сил и энергии</h4>
+                    </div>
+                    <div class="spa-btn">
+                        <button type="submit" data-scroll="#spaform" class="btn btn-recording">Записаться</button>
+                        <button type="submit" data-scroll="#services" class="btn btn-services">Услуги</button>
+                    </div>
+                </div><!-- /spa-title -->
+            </div><!-- /main-spa -->
+
+        </div><!-- /container -->
+    </div> <!-- main -->
+
+    <div class="company" id="company">
+        <!-- company -->
+        <div class="container">
+            <!-- container -->
+            <h2 class="title_h2"> О компании</h2>
+            <div class="company-block">
+                <!-- company-block -->
+                <div class="company-left">
+                    <!-- company-left -->
+                    <div class="company-img-one">
+                        <img src="img/company/1.png" alt="">
+                    </div>
+
+
+                    <div class="company-img-two">
+                        <img src="img/company/2.png" alt="">
+                    </div>
+                </div><!-- /company-left -->
+                <div class="company-right">
+                    <!-- company-right -->
+                    <h3 class="title_h3">Relax studio - сочетание уютной атмосферы
+                        и качества обслуживания </h3>
+                    <div class="company-text">
+                        <p>Relax studio это островок оздоровления и отдыха, созданный с любовью и тщательным подходом к
+                            каждой детали.
+                        </p>
+                        <p>От профессионализма балийских мастеров, большого выбора спа-программ - до уюта,
+                            гостеприимного сервиса, интерьеров, удобных локаций и дополнительных услуг для комфорта
+                            дорогих гостей: хамам, бассейн, парковка.
+                        </p>
+
+                    </div>
+
+                    <div class="company-benefits">
+                        <!-- company-benefits -->
+                        <div class="benefits-block">
+                            <div class="benefits_img"> <img src="img/company/right/1.svg" alt=""></div>
+                            <div class="benefits_text">
+                                <p>Лучшие специалисты</p>
+                            </div>
+                        </div>
+                        <div class="benefits-block">
+                            <div class="benefits_img"> <img src="img/company/right/2.svg" alt=""></div>
+                            <div class="benefits_text">
+                                <p>Множество услуг</p>
+                            </div>
+                        </div>
+                        <div class="benefits-block">
+                            <div class="benefits_img"> <img src="img/company/right/3.svg" alt=""></div>
+                            <div class="benefits_text">
+                                <p>Расслябляющие чайные церемонии после каждой процедуры</p>
+                            </div>
+                        </div>
+                        <div class="benefits-block">
+                            <div class="benefits_img"> <img src="img/company/right/4.svg" alt=""></div>
+                            <div class="benefits_text">
+                                <p>Красота и комфорт</p>
+                            </div>
+                        </div>
+                    </div><!-- /company-benefits -->
+                </div><!-- /company-right -->
+            </div><!-- /company-block -->
+        </div><!-- /container -->
+    </div> <!-- /company -->
+
+    <div class="services" id="services">
+        <!-- services -->
+        <div class="container">
+            <!-- container -->
+            <h2 class="title_h2">Услуги</h2>
+            <div class="services-block">
+                <!-- services-block -->
+                <div class="services-left">
+                    <!-- services-left -->
+                    <div class="services-list">
+                        <button class="accordion" id="accordion">
+                            Спа-программы
+                        </button>
+                        <div class="services-list__text">
+                            <a href="#link-one" class="services-btn"><span> Для одного </span></a>
+                            <a href="#link-two" class="services-btn"><span> Для двоих</span> </a>
+                            <div class="services-list_two">
+                                <a class="services-btn"><span> Восточная ночь</span></a>
+                                <a class="services-btn"><span> Спа-программа на двоих “Жемчужина
+                                        Бали”</span></a>
+                                <a class="services-btn"><span> Спа-программа на двоих “Гармония”</span></a>
+                                <a class="services-btn"><span> Спа-программа на двоих “Роскошь
+                                        востока”</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-list">
+                        <button class="accordion">
+                            Спа-уходы для тела
+                        </button>
+                        <div class="services-list__text">
+                            <button class="services-btn"><span> Для одного </span></button>
+
+                        </div>
+                    </div>
+                    <div class="services-list">
+                        <button class="accordion">
+                            Массажи
+                        </button>
+                        <div class="services-list__text">
+                            <button class="services-btn"><span> Для одного </span></button>
+                            <button class="services-btn"><span> Для двоих</span> </button>
+                            <div class="services-list_two">
+                                <button class="services-btn"><span> Восточная ночь</span></button>
+                                <button class="services-btn"><span> Массаж на двоих “Жемчужина Бали”</span></button>
+                                <button class="services-btn"><span> Массаж на двоих “Гармония”</span></button>
+                                <button class="services-btn"><span> Массаж на двоих “Роскошь востока”</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-list">
+                        <button class="accordion">
+                            Спа-уходы для лица
+                        </button>
+                        <div class="services-list__text">
+                            <button class="services-btn"><span> Для одного </span></button>
+
+                        </div>
+                    </div>
+                    <div class="services-list">
+                        <button class="accordion">
+                            Аппаратные методики
+                        </button>
+                        <div class="services-list__text">
+                            <button class="services-btn"><span> Для одного </span></button>
+
+                        </div>
+                    </div>
+                    <div class="services-list">
+                        <button class="accordion">
+                            Спа для мужчин
+                        </button>
+                        <div class="services-list__text">
+                            <button class="services-btn"><span> Для одного </span></button>
+
+                        </div>
+                    </div>
+                    <div class="services-list">
+                        <button class="accordion">
+                            Ритуалы в хамамме
+                        </button>
+                        <div class="services-list__text">
+                            <button class="services-btn"><span> Для одного </span></button>
+
+                        </div>
+                    </div>
+
+                </div><!-- /services-left -->
+                <div>
+                    <div id="link-one" class="services-right">
+                        <!-- services-right -->
+                        <h3 class="title_h3">Спа-программа на одного </h3>
+                        <div class="right-block_one">
+                            <span>СПА программа на одного
+                            </span>
+                            <span>В этой изящной SPA-программе вас ожидают:
+                            </span>
+                        </div>
+                        <div class="right-block_two">
+                            <p class="services-right-list">Распаривание и аромапарение в хамамме.</p>
+
+                            <p class="services-right-list">Маска красоты для тела Яванский Лулур, обертывание, душ.
+                            </p>
+                            <p class="services-right-list">Балийская ванна красоты с кокосовым молоком, травами и
+                                цветами.
+                            </p>
+                            <p class="services-right-list">Отдых, чайная церемония.
+                            </p>
+                            <p class="services-right-list">Балийский SPA- массаж для поднятия жизненных сил,
+                                настроения и
+                                энергии с волшебным маслом амбрэ и эфирными маслами сандала, иланг-иланга и майорана.
+                                Техники массажа и масляная композиция афродизиаков поднимают настроение и активизируют
+                                кровообращение.
+                            </p>
+                            <p class="services-right-list">Аэротонирование душистой водой “Ароматы Бали”.</p>
+                        </div>
+                        <div class="services-block__btn">
+                            <div class="services-rigth__btn">
+                                <button type="submit" data-scroll="#spaform"
+                                    class="btn btn-recording">Записаться</button>
+                            </div>
+                            <div class="services-prices">
+                                <span class="services-prices__text">
+                                    12 000 Р/ 90 мин
+                                </span>
+                            </div>
+                        </div>
+                    </div><!-- /services-right -->
+                    <div id="link-two" class="services-right">
+                        <!-- services-right -->
+                        <h3 class="title_h3">Спа-программа на двоих “Жемчужина Бали”</h3>
+                        <div class="right-block_one">
+                            <span>СПА программа " Жемчужина Бали"
+                            </span>
+                            <span>В этой изящной SPA-программе вас ожидают:
+                            </span>
+                        </div>
+                        <div class="right-block_two">
+                            <p class="services-right-list">Распаривание и аромапарение в хамамме.</p>
+                            <p class="services-right-list">Глазирование-пилинг Лулур в бане рассул с органической
+                                пастой
+                                из трав, фруктов и цветов. LULUR – яванский омолаживающий и очищающий ритуал красоты.
+                                Королевский ритуал подготовки невест к свадьбе веками включал в себя уходы с лулуром.
+                            </p>
+                            <p class="services-right-list">Маска красоты для тела Яванский Лулур, обертывание, душ.
+                            </p>
+                            <p class="services-right-list">Балийская ванна красоты с кокосовым молоком, травами и
+                                цветами.
+                            </p>
+                            <p class="services-right-list">Отдых, чайная церемония.
+                            </p>
+                            <p class="services-right-list">Балийский SPA- массаж для поднятия жизненных сил,
+                                настроения и
+                                энергии с волшебным маслом амбрэ и эфирными маслами сандала, иланг-иланга и майорана.
+                                Техники массажа и масляная композиция афродизиаков поднимают настроение и активизируют
+                                кровообращение.
+                            </p>
+                            <p class="services-right-list">Аэротонирование душистой водой “Ароматы Бали”.</p>
+                        </div>
+                        <div class="services-block__btn">
+                            <div class="services-rigth__btn">
+                                <button type="submit" data-scroll="#spaform"
+                                    class="btn btn-recording">Записаться</button>
+                            </div>
+                            <div class="services-prices">
+                                <span class="services-prices__text">
+                                    12 000 Р/ 90 мин
+                                </span>
+                            </div>
+                        </div>
+                    </div><!-- /services-right -->
+                </div>
+            </div><!-- /services-block -->
+        </div><!-- /container -->
+    </div><!-- /services -->
+
+    <div class="spaform" id="spaform">
+        <!-- spaform -->
+        <div class="container">
+            <!-- container -->
+            <div class="spaform-fon">
+                <!-- spaform-fon -->
+                <div class="spaform-block">
+                    <!-- spaform-block -->
+                    <h2 class="title_h2">Дарим <span>скидку 10% </span> <br> на первое посещение</h2>
+                    <h3 class="title_h4">Оставьте ваш номер телефона и мы перезвоним вам!</h3>
+                    <form class="spaform__form" action="#" enctype="multipart/form-data" method="post">
+                        <div class="spaform__label">
+                            <input class="spaform__input" type="tel" name="phone" placeholder="+79991012131" required>
+                            <button type="submit" class="btn btn-recording">Записаться</button>
+                        </div>
+                    </form>
+                </div><!-- /spaform-block -->
+            </div><!-- /spaform-fon -->
+        </div><!-- /container -->
+    </div><!-- /spaform -->
+
+    <div class="sale" id="sale">
+        <!-- sale -->
+        <div class="container">
+            <!-- container -->
+            <h2 class="title_h2">Акции</h2>
+            <div class="sale-block">
+                <!-- sale-block -->
+                <div class="sale-block__img sale-block__img--one">
+                    <h3 class="title_h3">Скидка 50% <br>
+                        для именинника</h3>
+                </div>
+                <div class="sale-block__img--two">
+                    <img src="img/sale/2.png" alt="">
+                </div>
+                <div class="sale-block__img sale-block__img--tree">
+                    <h3 class="title_h3">Скидка 10% <br>
+                        при аренде комплекса
+                        на весь день</h3>
+                </div>
+            </div><!-- /sale-block -->
+        </div><!-- /container -->
+    </div><!-- /sale -->
+
+    <div class="contact" id="contact">
+        <!-- contact-->
+        <div class="container">
+            <!-- container -->
+            <h2 class="title_h2">Контакты</h2>
+            <div class="contact-block">
+                <!-- contact-block -->
+                <div class="contact-map" id="map"></div>
+                <div class="contact-right">
+                    <!-- contact-right -->
+                    <div class="contact-right__block">
+                        <!-- contact-right__block -->
+                        <h3 class="title_h3">Адрес</h3>
+                        <div class="contact-right__text">
+                            <a href="#map">Новосибирск, ул. Орджоникидзе, 26 </a>
+                        </div>
+                    </div>
+                    <div class="contact-right__block">
+                        <h3 class="title_h3">Телефон и E-mail</h3>
+                        <div class="contact-right__text">
+                            <a href="tel:+78009287384">+7 (800) 928-73-84</a>
+                        </div>
+                        <div class="contact-right__text">
+                            <a href="mail:relaxation.studio@yandex.ru">relaxation.studio@yandex.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-right__block">
+                        <h3 class="title_h3">Социальные сети</h3>
+                        <div class="contact-right__text">
+                            <a class="contact-right__icon" href="https://vk.com/"><img src="img/contact/vk.svg"
+                                    alt=""></a>
+                            <a class="contact-right__icon" href="https://www.instagram.com/"><img
+                                    src="img/contact/ig.svg" alt=""></a>
+                        </div>
+
+                    </div><!-- /contact-right__block -->
+                    <button type="submit" class="btn btn-recording">Записаться</button>
+                </div><!-- /contact-right -->
+            </div><!-- /contact-block -->
+        </div><!-- /container -->
+    </div><!-- /contact -->
+
+    <footer class="footer">
+        <!-- footer-->
+        <div class="container">
+            <!-- container -->
+            <div class="footer-block">
+                <!-- footer-block -->
+                <div class="logo">
+                    <img src="img/logo/1.svg" alt="">
+                </div>
+                <div class="list-menu">
+                    <!-- list-menu -->
+                    <a class="menu-item" href="#" data-scroll="#company"> О компании</a>
+                    <a class="menu-item" href="#" data-scroll="#services"> Услуги</a>
+                    <a class="menu-item" href="#" data-scroll="#sale"> Акции</a>
+                    <a class="menu-item" href="#" data-scroll="#contact"> Контакты</a>
+                </div><!-- /list-menu -->
+            </div><!-- /footer-block -->
+        </div><!-- /container -->
+    </footer><!-- /footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=ВАШ_ID&callback=initMap">
+    </script>
+</body>
+
+</html>

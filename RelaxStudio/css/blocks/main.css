@@ -1,0 +1,65 @@
+/*верстка под планшет*/
+.main {
+  background: url("../img/main/1.png") center center;
+  background-size: cover;
+  height: 100%;
+  height: 784px;
+  margin: 0 auto;
+}
+.main .clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media (max-width: 850px) {
+  .main {
+    height: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    height: 700px;
+  }
+}
+.main-spa {
+  margin-top: 200px;
+  float: right;
+}
+@media (max-width: 850px) {
+  .main-spa {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .main-spa {
+    margin-top: 60px;
+    float: none;
+  }
+}
+.spa-title {
+  max-width: 670px;
+}
+.spa-title .title_h1 {
+  margin-bottom: 25px;
+}
+.spa-title .title_h2 {
+  margin-bottom: 10px;
+}
+.spa-title .title_h4 {
+  max-width: 500px;
+}
+.spa-btn {
+  margin-top: 68px;
+  display: flex;
+}
+@media (max-width: 600px) {
+  .spa-btn {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .spa-btn .btn-services {
+    margin-top: 15px;
+  }
+}

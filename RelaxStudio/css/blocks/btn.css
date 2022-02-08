@@ -1,0 +1,27 @@
+/*верстка под планшет*/
+.btn {
+  width: 260px;
+  height: 63px;
+  border-radius: 32px 0;
+  border: 2px solid #BAD8D8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+}
+.btn-recording {
+  color: #000000;
+  background-color: #BAD8D8;
+  margin-right: 40px;
+}
+.btn-recording:hover,
+.btn-service:hover {
+  box-shadow: 5px 5px 5px 5px rgba(96, 207, 155, 0.5);
+}
+.btn-services {
+  color: #ffffff;
+}

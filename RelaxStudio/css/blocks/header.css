@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-item {
+  color: white;
+  margin-right: 45px;
+}
+.contact-phone {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.contact__icon {
+  width: 28px;
+  height: 28px;
+  fill: #BAD8D8;
+  margin-right: 6px;
+}
