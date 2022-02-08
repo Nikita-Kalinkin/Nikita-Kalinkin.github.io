@@ -1,0 +1,59 @@
+.contact {
+  display: flex;
+  background: url(https://fakeimg.pl/477x700);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+@media (max-width: 991px) {
+  .contact {
+    background: url(https://fakeimg.pl/400x582);
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 767px) {
+  .contact {
+    background: none;
+  }
+}
+.contact__left {
+  width: 47%;
+  padding: 2rem;
+}
+@media (max-width: 767px) {
+  .contact__left {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 565px) {
+  .contact__left {
+    width: 100%;
+  }
+}
+@media (max-width: 565px) {
+  .contact__left .btn {
+    display: inline-block;
+    min-width: 150px;
+    width: 0;
+  }
+}
+.contact__info {
+  margin: 2rem 0 3rem;
+  padding: 0;
+  list-style: none;
+  font-size: .94rem;
+  color: #2b2a2c;
+  font-weight: 300;
+}
+.contact__info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: .75rem;
+}
+.contact__info-item:last-child {
+  margin-bottom: 0;
+}
+.contact__info-icon {
+  margin-right: .75rem;
+}
