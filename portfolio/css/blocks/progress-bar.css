@@ -1,0 +1,36 @@
+.progress-bar {
+  margin-bottom: 2.6rem;
+}
+@media (max-width: 565px) {
+  .progress-bar {
+    margin-bottom: 1.1rem;
+  }
+}
+.progress-bar__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: .3rem;
+}
+@media (max-width: 767px) {
+  .progress-bar__item {
+    margin-bottom: 0.5rem;
+    justify-content: center;
+  }
+}
+.progress-bar__title {
+  font-size: .94rem;
+  font-weight: 300;
+}
+.progress-bar__right {
+  padding-left: 1.2rem;
+}
+.progress-bar__bar {
+  width: 139px;
+  height: 6px;
+  background-color: #EFEFEF;
+}
+.progress-bar__progress {
+  height: 100%;
+  background-color: #6a696b;
+  transition: width .2s linear;
+}

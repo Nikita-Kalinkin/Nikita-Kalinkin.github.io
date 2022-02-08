@@ -1,0 +1,37 @@
+.form__group {
+  margin-bottom: 1.8rem;
+}
+.form__label {
+  display: inline-block;
+  margin-bottom: .6rem;
+  margin-left: 1.8rem;
+  font-size: .8rem;
+  color: #2b2a2c;
+  font-weight: 700;
+}
+.form__input,
+.form__textarea {
+  display: block;
+  width: 100%;
+  padding: 1.3rem 1.8rem;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  border-radius: 1.8rem;
+  font-family: inherit;
+  font-size: .8rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #2b2a2c;
+}
+.form__input:focus,
+.form__textarea:focus {
+  outline: none;
+  border-color: #36abc7;
+}
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: #2b2a2c;
+}
+.form__textarea {
+  height: 200px;
+  resize: none;
+}

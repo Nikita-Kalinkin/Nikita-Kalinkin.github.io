@@ -1,0 +1,34 @@
+.social {
+  display: flex;
+  margin-bottom: 42px;
+}
+@media (max-width: 565px) {
+  .social {
+    display: block;
+    margin-bottom: 27px;
+  }
+}
+.social__link {
+  margin-right: 10px;
+  text-decoration: none;
+  transition: transform .2s linear;
+}
+.social__link:hover {
+  transform: translateY(-5px);
+}
+@media (max-width: 565px) {
+  .social__link {
+    margin-right: 5px;
+  }
+  .social__link img {
+    width: 40px;
+  }
+}
+@media (max-width: 374px) {
+  .social__link {
+    margin-right: 3px;
+  }
+  .social__link img {
+    width: 35px;
+  }
+}
