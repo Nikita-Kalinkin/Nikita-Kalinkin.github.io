@@ -1,11 +1,9 @@
 # Калинкин Никита
 
-Ссылки на моё портфолио
+**Портфолио**
  
 1. [Сайт для порфтолио Веб-дизайнера](https://Nikita-Kalinkin.github.io/Portolio_site)
-2. https://Nikita-Kalinkin.github.io/BrowLove
-   Сайт для онлайн школы бровиста
-3. https://Nikita-Kalinkin.github.io/Plants
-   Сайт для Интернет-магазина Plants
+2. [Сайт для онлайн школы бровиста](https://Nikita-Kalinkin.github.io/BrowLove) 
+3. [Сайт для Интернет-магазина Plants](https://Nikita-Kalinkin.github.io/Plants)
 
 
