@@ -90,7 +90,7 @@
   pointer-events: none
 }
 
-.main-slider {
+.slider-nav {
   display: flex;
   justify-content: center;
   position: absolute;
