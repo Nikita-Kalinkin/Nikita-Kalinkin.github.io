@@ -1,1 +1,0 @@
-<?php //Slience is golden.
